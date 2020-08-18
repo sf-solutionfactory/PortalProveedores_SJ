@@ -313,3 +313,15 @@ C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jas
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll.config
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll.config
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojAssemblyReference.cache
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csproj.CopyComplete
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb

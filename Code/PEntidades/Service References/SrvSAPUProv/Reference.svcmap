@@ -18,10 +18,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://Devawssc01.sicsa.proatech.mx:8000/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores?sap-client=100" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://btchsqas00.sanjacintoqas.local:8080/sap/bc/srt/wsdl/flv_10002P111AD1/sdef_url/ZWS_UPROVEEDORES?sap-client=300" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="zws_uproveedores.wsdl" MetadataType="Wsdl" ID="7905c29d-5ead-47fa-b998-156246fac7b8" SourceId="1" SourceUrl="http://devawssc01.sicsa.proatech.mx:8000/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores?sap-client=100" />
+    <MetadataFile FileName="ZWS_UPROVEEDORES1.wsdl" MetadataType="Wsdl" ID="4815906a-f4e6-4c41-8c4b-ab285ec94c1d" SourceId="1" SourceUrl="http://btchsqas00.sanjacintoqas.local:8080/sap/bc/srt/wsdl/flv_10002P111AD1/sdef_url/ZWS_UPROVEEDORES?sap-client=300" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

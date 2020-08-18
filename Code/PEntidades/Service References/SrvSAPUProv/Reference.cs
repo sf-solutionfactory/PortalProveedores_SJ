@@ -16,60 +16,63 @@ namespace PEntidades.SrvSAPUProv {
     public interface ZWS_UPROVEEDORES {
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_UDATA_MASTER no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UDATA_MASTERRequest", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UDATA_MASTERRequest", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UDATA_MASTERResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_UDATA_MASTERResponse1 Z_UDATA_MASTER(PEntidades.SrvSAPUProv.Z_UDATA_MASTERRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_UFAC_CARGADAS no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_CARGADASRequest", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_CARGADASRequest", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_CARGADASResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_UFAC_CARGADASResponse1 Z_UFAC_CARGADAS(PEntidades.SrvSAPUProv.Z_UFAC_CARGADASRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_UFAC_LISTPA no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_LISTPARequest", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_LISTPARequest", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_LISTPAResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_UFAC_LISTPAResponse1 Z_UFAC_LISTPA(PEntidades.SrvSAPUProv.Z_UFAC_LISTPARequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_UFAC_VERIFICAR no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFICARRequest", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFICARRequest", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFICARResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_UFAC_VERIFICARResponse1 Z_UFAC_VERIFICAR(PEntidades.SrvSAPUProv.Z_UFAC_VERIFICARRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_UFAC_VERIFMIR7 no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFMIR7Request", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFMIR7Request", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFMIR7Response")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_UFAC_VERIFMIR7Response1 Z_UFAC_VERIFMIR7(PEntidades.SrvSAPUProv.Z_UFAC_VERIFMIR7Request request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_UPAGOS no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPAGOSRequest", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPAGOSRequest", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPAGOSResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_UPAGOSResponse1 Z_UPAGOS(PEntidades.SrvSAPUProv.Z_UPAGOSRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_UPARTIDAS_ABIERTAS no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPARTIDAS_ABIERTASReque" +
-            "st", ReplyAction="*")]
+            "st", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPARTIDAS_ABIERTASRespo" +
+            "nse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_UPARTIDAS_ABIERTASResponse1 Z_UPARTIDAS_ABIERTAS(PEntidades.SrvSAPUProv.Z_UPARTIDAS_ABIERTASRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_URES_PROVEEDORES no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_PROVEEDORESRequest" +
-            "", ReplyAction="*")]
+            "", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_PROVEEDORESRespons" +
+            "e")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_URES_PROVEEDORESResponse1 Z_URES_PROVEEDORES(PEntidades.SrvSAPUProv.Z_URES_PROVEEDORESRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_URES_SOCIEDADES no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_SOCIEDADESRequest", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_SOCIEDADESRequest", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_SOCIEDADESResponse" +
+            "")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_URES_SOCIEDADESResponse1 Z_URES_SOCIEDADES(PEntidades.SrvSAPUProv.Z_URES_SOCIEDADESRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación Z_URFC no es RPC ni está encapsulada en un documento.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URFCRequest", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URFCRequest", ReplyAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URFCResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         PEntidades.SrvSAPUProv.Z_URFCResponse1 Z_URFC(PEntidades.SrvSAPUProv.Z_URFCRequest request);
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -78,7 +81,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZELIFNR_PROV[] pROVEEDORField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZELIFNR_PROV[] PROVEEDOR {
@@ -101,8 +104,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -111,7 +114,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string lIFNRField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string LIFNR {
             get {
@@ -133,8 +136,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -147,7 +150,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string bUKRSField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string STCEG {
             get {
@@ -159,7 +162,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string LIFNR {
             get {
@@ -171,7 +174,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public string BUKRS {
             get {
@@ -193,8 +196,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -209,7 +212,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string sMTP_ADDRField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string STCEG {
             get {
@@ -221,7 +224,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string NAME1 {
             get {
@@ -233,7 +236,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public string LIFNR {
             get {
@@ -245,7 +248,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string SMTP_ADDR {
             get {
@@ -267,8 +270,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -311,7 +314,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string bUDATField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string ZUONR {
             get {
@@ -323,7 +326,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string BELNR {
             get {
@@ -335,7 +338,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public string BLART {
             get {
@@ -347,7 +350,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string BLDAT {
             get {
@@ -359,7 +362,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public decimal DMSHB {
             get {
@@ -371,7 +374,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public string HWAER {
             get {
@@ -383,7 +386,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public string TEXTL {
             get {
@@ -395,7 +398,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public string FDTAG {
             get {
@@ -407,7 +410,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public string AUGBL {
             get {
@@ -419,7 +422,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public string XBLNR {
             get {
@@ -431,7 +434,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public string KONTO {
             get {
@@ -443,7 +446,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public string NAME1 {
             get {
@@ -455,7 +458,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
         public string SGTXT {
             get {
@@ -467,7 +470,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
         public string EBELN {
             get {
@@ -479,7 +482,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
         public string F_BASE {
             get {
@@ -491,7 +494,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
         public string F_VENCIM {
             get {
@@ -503,7 +506,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
         public string GJAHR {
             get {
@@ -515,7 +518,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
         public string BUDAT {
             get {
@@ -537,8 +540,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -611,7 +614,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string gJAHRField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string LIFNR {
             get {
@@ -623,7 +626,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string BUKRS {
             get {
@@ -635,7 +638,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public decimal WRBTR {
             get {
@@ -647,7 +650,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string EBELN {
             get {
@@ -659,7 +662,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public string XBLNR2 {
             get {
@@ -671,7 +674,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public string WAERS {
             get {
@@ -683,7 +686,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public string WERKS {
             get {
@@ -695,7 +698,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public decimal CST_IND {
             get {
@@ -707,7 +710,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public decimal IVA {
             get {
@@ -719,7 +722,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public string MWSKZ {
             get {
@@ -731,7 +734,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public string IMP_TOTAL {
             get {
@@ -743,7 +746,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public decimal SALDO {
             get {
@@ -755,7 +758,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
         public string LIGHTS {
             get {
@@ -767,7 +770,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
         public string BUDAT {
             get {
@@ -779,7 +782,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
         public string BLDAT {
             get {
@@ -791,7 +794,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
         public decimal RETENCION {
             get {
@@ -803,7 +806,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
         public decimal TGLACC {
             get {
@@ -815,7 +818,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
         public string FACT_SAT {
             get {
@@ -827,7 +830,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
         public string FACT_SAP {
             get {
@@ -839,7 +842,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
         public string INCIDENCIA {
             get {
@@ -851,7 +854,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
         public string TIPO {
             get {
@@ -863,7 +866,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
         public string POSICION {
             get {
@@ -875,7 +878,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
         public string TIPOLINEA {
             get {
@@ -887,7 +890,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
         public string RFC_PROVEEDOR {
             get {
@@ -899,7 +902,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
         public string RFC_SOC {
             get {
@@ -911,7 +914,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
         public int ZCOUNT {
             get {
@@ -923,7 +926,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
         public string MSG_VARIOS {
             get {
@@ -935,7 +938,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
         public string TXZ01 {
             get {
@@ -947,7 +950,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=28)]
         public string BELNR {
             get {
@@ -959,7 +962,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=29)]
         public string BWTAR {
             get {
@@ -971,7 +974,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=30)]
         public string KSCHL {
             get {
@@ -983,7 +986,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=31)]
         public string MATNR {
             get {
@@ -995,7 +998,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=32)]
         public string GJAHR {
             get {
@@ -1017,8 +1020,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1027,7 +1030,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string wERKSField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string WERKS {
             get {
@@ -1049,8 +1052,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1061,7 +1064,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string aCTIVOField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string ACREDOR {
             get {
@@ -1073,7 +1076,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string ACTIVO {
             get {
@@ -1095,8 +1098,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1105,7 +1108,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string uUID_XMLField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string UUID_XML {
             get {
@@ -1127,8 +1130,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1179,7 +1182,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string tEXTLField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string LIFNR {
             get {
@@ -1191,7 +1194,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string TITLE_MEDI {
             get {
@@ -1203,7 +1206,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public string NAME1 {
             get {
@@ -1215,7 +1218,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string NAME2 {
             get {
@@ -1227,7 +1230,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public string SORT1 {
             get {
@@ -1239,7 +1242,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public string STREET {
             get {
@@ -1251,7 +1254,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public byte HOUSE_NUM1 {
             get {
@@ -1263,7 +1266,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public string POST_CODE1 {
             get {
@@ -1275,7 +1278,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public string ADDR1_DATA {
             get {
@@ -1287,7 +1290,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public string COUNTRY {
             get {
@@ -1299,7 +1302,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public string NAMECOUNTRY {
             get {
@@ -1311,7 +1314,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public string REGION {
             get {
@@ -1323,7 +1326,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
         public string NAMEREGION {
             get {
@@ -1335,7 +1338,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
         public string PO_BOX {
             get {
@@ -1347,7 +1350,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
         public string POST_CODE2 {
             get {
@@ -1359,7 +1362,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
         public string LANGU {
             get {
@@ -1371,7 +1374,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
         public string TEL_NUMBER {
             get {
@@ -1383,7 +1386,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
         public string FAX_NUMBER {
             get {
@@ -1395,7 +1398,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
         public string EXTENSION1 {
             get {
@@ -1407,7 +1410,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
         public string EXTENSION2 {
             get {
@@ -1419,7 +1422,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
         public string ZAHLS {
             get {
@@ -1431,7 +1434,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
         public string TEXTL {
             get {
@@ -1453,8 +1456,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1463,7 +1466,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZEDATA_MASTER[] dATOS_MAESTROSField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEDATA_MASTER[] DATOS_MAESTROS {
@@ -1520,8 +1523,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1578,7 +1581,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string zCFDI_UUIDField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string BELNR {
             get {
@@ -1590,7 +1593,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string BUKRS {
             get {
@@ -1602,7 +1605,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public string BWTAR {
             get {
@@ -1614,7 +1617,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string CORREO {
             get {
@@ -1626,7 +1629,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public string DESADJUNTAR {
             get {
@@ -1638,7 +1641,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public string EBELN {
             get {
@@ -1650,7 +1653,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public string EBELP {
             get {
@@ -1662,7 +1665,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public string FECHA_XML {
             get {
@@ -1674,7 +1677,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public decimal IMP_RETEN {
             get {
@@ -1686,7 +1689,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IMP_RETENSpecified {
             get {
@@ -1698,7 +1701,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public string KSCHL {
             get {
@@ -1710,7 +1713,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public string LIFNR {
             get {
@@ -1722,7 +1725,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public string MSJ_SAP {
             get {
@@ -1734,7 +1737,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
         public string MSJ_SAT {
             get {
@@ -1746,7 +1749,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
         public string PDFFILE {
             get {
@@ -1758,7 +1761,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=14)]
         public byte[] RAW {
             get {
@@ -1770,7 +1773,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=15)]
         public byte[] RAWPDF {
             get {
@@ -1782,7 +1785,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
         public string STATUS {
             get {
@@ -1794,7 +1797,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
         public string TIPO {
             get {
@@ -1806,7 +1809,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
         public string TIPOARCHIVO {
             get {
@@ -1818,7 +1821,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEDATA_UUID[] UUID_XML {
@@ -1831,7 +1834,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
         public string WERKS {
             get {
@@ -1843,7 +1846,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
         public string XBLNR {
             get {
@@ -1855,7 +1858,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
         public string XMLFILE {
             get {
@@ -1867,7 +1870,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
         public string ZCFDI_UUID {
             get {
@@ -1889,8 +1892,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1899,7 +1902,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string rESULTField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string RESULT {
             get {
@@ -1955,8 +1958,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1973,8 +1976,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1983,7 +1986,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZELISTA_PROVE[] iT_PROVACTIVOSField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZELISTA_PROVE[] IT_PROVACTIVOS {
@@ -2040,8 +2043,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2049,10 +2052,6 @@ namespace PEntidades.SrvSAPUProv {
     public partial class Z_UFAC_VERIFICAR : object, System.ComponentModel.INotifyPropertyChanged {
         
         private ZEPLANT_PROV[] cENTROField;
-        
-        private string fACTURA_HIGHField;
-        
-        private string fACTURA_LOWField;
         
         private string f_COMPRA_HIGHField;
         
@@ -2078,7 +2077,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string rEFERENCIA_LOWField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEPLANT_PROV[] CENTRO {
@@ -2091,32 +2090,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string FACTURA_HIGH {
-            get {
-                return this.fACTURA_HIGHField;
-            }
-            set {
-                this.fACTURA_HIGHField = value;
-                this.RaisePropertyChanged("FACTURA_HIGH");
-            }
-        }
-        
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string FACTURA_LOW {
-            get {
-                return this.fACTURA_LOWField;
-            }
-            set {
-                this.fACTURA_LOWField = value;
-                this.RaisePropertyChanged("FACTURA_LOW");
-            }
-        }
-        
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string F_COMPRA_HIGH {
             get {
                 return this.f_COMPRA_HIGHField;
@@ -2127,8 +2102,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public string F_COMPRA_LOW {
             get {
                 return this.f_COMPRA_LOWField;
@@ -2139,8 +2114,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string F_FAC_HIGH {
             get {
                 return this.f_FAC_HIGHField;
@@ -2151,8 +2126,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public string F_FAC_LOW {
             get {
                 return this.f_FAC_LOWField;
@@ -2163,8 +2138,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public string MONEDA_HIGH {
             get {
                 return this.mONEDA_HIGHField;
@@ -2175,8 +2150,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public string MONEDA_LOW {
             get {
                 return this.mONEDA_LOWField;
@@ -2187,8 +2162,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZELIFNR_PROV[] PROVEEDOR {
             get {
@@ -2200,8 +2175,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public string P_BLOCK {
             get {
                 return this.p_BLOCKField;
@@ -2212,8 +2187,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public string P_ORDPED {
             get {
                 return this.p_ORDPEDField;
@@ -2224,8 +2199,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public string P_ORDREF {
             get {
                 return this.p_ORDREFField;
@@ -2236,8 +2211,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public string REFERENCIA_HIGH {
             get {
                 return this.rEFERENCIA_HIGHField;
@@ -2248,8 +2223,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
         public string REFERENCIA_LOW {
             get {
                 return this.rEFERENCIA_LOWField;
@@ -2270,8 +2245,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2282,7 +2257,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string mENSAJEField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEFACT_X_VERIF[] IT_F_VERIFICAR {
@@ -2295,7 +2270,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string MENSAJE {
             get {
@@ -2351,8 +2326,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2370,6 +2345,10 @@ namespace PEntidades.SrvSAPUProv {
         private decimal iMPORTE_IVAField;
         
         private bool iMPORTE_IVAFieldSpecified;
+        
+        private decimal iMPORTE_RETField;
+        
+        private bool iMPORTE_RETFieldSpecified;
         
         private decimal iMPORTE_SUBField;
         
@@ -2393,7 +2372,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string vAL_MONEDAField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string FECHA_FACT {
             get {
@@ -2405,7 +2384,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string FISYEAR {
             get {
@@ -2417,7 +2396,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public decimal IMPORTE {
             get {
@@ -2429,7 +2408,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IMPORTESpecified {
             get {
@@ -2441,7 +2420,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public decimal IMPORTE_IVA {
             get {
@@ -2453,7 +2432,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IMPORTE_IVASpecified {
             get {
@@ -2465,8 +2444,32 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public decimal IMPORTE_RET {
+            get {
+                return this.iMPORTE_RETField;
+            }
+            set {
+                this.iMPORTE_RETField = value;
+                this.RaisePropertyChanged("IMPORTE_RET");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IMPORTE_RETSpecified {
+            get {
+                return this.iMPORTE_RETFieldSpecified;
+            }
+            set {
+                this.iMPORTE_RETFieldSpecified = value;
+                this.RaisePropertyChanged("IMPORTE_RETSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public decimal IMPORTE_SUB {
             get {
                 return this.iMPORTE_SUBField;
@@ -2477,7 +2480,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IMPORTE_SUBSpecified {
             get {
@@ -2489,8 +2492,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public decimal IMP_DESCUEN {
             get {
                 return this.iMP_DESCUENField;
@@ -2501,7 +2504,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IMP_DESCUENSpecified {
             get {
@@ -2513,8 +2516,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public string MONEDA {
             get {
                 return this.mONEDAField;
@@ -2525,8 +2528,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public string NUM_DOC {
             get {
                 return this.nUM_DOCField;
@@ -2537,8 +2540,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public string VAL_FECH_FACT {
             get {
                 return this.vAL_FECH_FACTField;
@@ -2549,8 +2552,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public string VAL_IMPORTE {
             get {
                 return this.vAL_IMPORTEField;
@@ -2561,8 +2564,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public string VAL_IMP_IVA {
             get {
                 return this.vAL_IMP_IVAField;
@@ -2573,8 +2576,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
         public string VAL_IMP_SUB {
             get {
                 return this.vAL_IMP_SUBField;
@@ -2585,8 +2588,8 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
         public string VAL_MONEDA {
             get {
                 return this.vAL_MONEDAField;
@@ -2607,8 +2610,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2617,7 +2620,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string mENSAJEField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string MENSAJE {
             get {
@@ -2673,8 +2676,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2689,7 +2692,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZEPLANT_PROV[] sOCIEDADField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string DATE1 {
             get {
@@ -2701,7 +2704,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string DATE2 {
             get {
@@ -2713,7 +2716,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZELIFNR_PROV[] PROVEEDOR {
@@ -2726,7 +2729,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEPLANT_PROV[] SOCIEDAD {
@@ -2749,8 +2752,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2759,7 +2762,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZEPARTIDAS_ABIERTAS[] pAGOSField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEPARTIDAS_ABIERTAS[] PAGOS {
@@ -2816,8 +2819,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2832,7 +2835,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZEPLANT_PROV[] sOCIEDADField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string DATE1 {
             get {
@@ -2844,7 +2847,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string DATE2 {
             get {
@@ -2856,7 +2859,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZELIFNR_PROV[] PROVEEDOR {
@@ -2869,7 +2872,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEPLANT_PROV[] SOCIEDAD {
@@ -2892,8 +2895,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2902,7 +2905,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZEPARTIDAS_ABIERTAS[] pARTIDAS_ABIERTASField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZEPARTIDAS_ABIERTAS[] PARTIDAS_ABIERTAS {
@@ -2959,8 +2962,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2971,7 +2974,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string eXTRANJEROField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string BUKRS {
             get {
@@ -2983,7 +2986,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string EXTRANJERO {
             get {
@@ -3005,8 +3008,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3015,7 +3018,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZERES_USUARIOS[] zTRES_USUARIOSField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZERES_USUARIOS[] ZTRES_USUARIOS {
@@ -3072,8 +3075,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3084,7 +3087,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string eXTRANJEROField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string BUKRS {
             get {
@@ -3096,7 +3099,7 @@ namespace PEntidades.SrvSAPUProv {
             }
         }
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string EXTRANJERO {
             get {
@@ -3118,8 +3121,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3128,7 +3131,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private ZERES_SOCIEDADES[] zTRES_SOCIEDADESField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZERES_SOCIEDADES[] ZTRES_SOCIEDADES {
@@ -3185,8 +3188,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3195,7 +3198,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string sOCIEDADField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string SOCIEDAD {
             get {
@@ -3217,8 +3220,8 @@ namespace PEntidades.SrvSAPUProv {
         }
     }
     
-    /// <comentarios/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1099.0")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3227,7 +3230,7 @@ namespace PEntidades.SrvSAPUProv {
         
         private string rFCField;
         
-        /// <comentarios/>
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string RFC {
             get {

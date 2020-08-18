@@ -51,8 +51,8 @@ namespace PNegocio
                     verificar.CENTRO = PEntidades.Utiles.objetoSociedad(splitSoc);
                     verificar.F_COMPRA_HIGH = fhigh;
                     verificar.F_COMPRA_LOW = flow;
-                    verificar.FACTURA_HIGH = facthig;
-                    verificar.FACTURA_LOW = factlow;
+                    //verificar.FACTURA_HIGH = facthig;
+                    //verificar.FACTURA_LOW = factlow;
                     verificar.MONEDA_HIGH = monedahig;
                     verificar.MONEDA_LOW = monedalow;
                     verificar.P_BLOCK = "X";
@@ -148,7 +148,7 @@ namespace PNegocio
         /// <param name="moneda">Tipo de Moneda</param>
         /// <param name="numerodoc">Numero de documento</param>
         /// <returns></returns>
-        public string validardatosMir7(List<string[]> listaDiferentesInstancias, string fechafac, string año, decimal importe, decimal importeIVA, decimal importeSub, string moneda, string  numerodoc, string val_fec, string val_impt, string val_imps, string val_iva, string val_mon, decimal importedesc)
+        public string validardatosMir7(List<string[]> listaDiferentesInstancias, string fechafac, string año, decimal importe, decimal importeIVA, decimal importeRET, decimal importeSub, string moneda, string  numerodoc, string val_fec, string val_impt, string val_imps, string val_iva, string val_mon, decimal importedesc)
         {
             PEntidades.SrvSAPUProv.ZWS_UPROVEEDORESClient srv = new PPersistencia.WebServices().getZWS_UPROVEEDORESInstanceNew(
                     listaDiferentesInstancias[0][1].ToString().Trim(),
@@ -163,6 +163,8 @@ namespace PNegocio
             verimir7.IMPORTE = importe;
             verimir7.IMPORTESpecified = true;
             verimir7.IMPORTE_IVA = importeIVA;
+            verimir7.IMPORTE_RETSpecified = true;
+            verimir7.IMPORTE_RET = importeRET;
             verimir7.IMPORTE_IVASpecified = true;
             verimir7.IMPORTE_SUB = importeSub;
             verimir7.IMPORTE_SUBSpecified = true;

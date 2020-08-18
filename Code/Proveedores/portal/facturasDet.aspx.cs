@@ -765,6 +765,7 @@ namespace Proveedores.portal
                     bool validarmir7 = false;
                     decimal importe = 0;
                     decimal importeiva = 0;
+                    decimal importeret = 0;
                     decimal importesub = 0;
                     decimal importedes = 0;
                     try
@@ -794,38 +795,39 @@ namespace Proveedores.portal
                     //string advertencia = "";
                     bool boolfolio = true;
                     fecha_xml = xmlDoc.LastChild.Attributes["Fecha"].Value.Substring(0, 10);
-                    try
-                    {
-                        referencia = xmlDoc.LastChild.Attributes["Serie"].Value.ToUpper() + xmlDoc.LastChild.Attributes["Folio"].Value;
-                    }
-                    catch (Exception)
-                    {
-                        try
-                        {
-                            referencia = xmlDoc.LastChild.Attributes["Serie"].Value.ToUpper();
-                        }
-                        catch (Exception)
-                        {
-                            try
-                            {
-                                referencia = xmlDoc.LastChild.Attributes["Folio"].Value;
-                            }
-                            catch (Exception)
-                            {
-                                try
-                                {
-                                    referencia = xmlDoc.LastChild.LastChild.FirstChild.Attributes["Folio"].Value;
-                                }
-                                catch (Exception)
-                                {
-                                    
-                                }
-                            }
-                        }
+                    //try
+                    //{
+                    //    referencia = xmlDoc.LastChild.Attributes["Serie"].Value.ToUpper() + xmlDoc.LastChild.Attributes["Folio"].Value;
+                    //}
+                    //catch (Exception)
+                    //{
+                    //    try
+                    //    {
+                    //        referencia = xmlDoc.LastChild.Attributes["Serie"].Value.ToUpper();
+                    //    }
+                    //    catch (Exception)
+                    //    {
+                    //        try
+                    //        {
+                    //            referencia = xmlDoc.LastChild.Attributes["Folio"].Value;
+                    //        }
+                    //        catch (Exception)
+                    //        {
+                    //            try
+                    //            {
+                    //                referencia = xmlDoc.LastChild.LastChild.FirstChild.Attributes["Folio"].Value;
+                    //            }
+                    //            catch (Exception)
+                    //            {
 
-                    }
+                    //            }
+                    //        }
+                    //    }
 
-                    referencia = referencia.Replace("_", "").Replace("-", "");
+                    //}
+
+                    //referencia = referencia.Replace("_", "").Replace("-", "");
+                    referencia = listFact[int.Parse(index)].uuid.Substring(listFact[int.Parse(index)].uuid.Length - 5);
                     if (referencia != refer)
                     {
                         mensajeval = mensajeval + "Las referencias son diferentes: </br> XML: " + referencia + "</br>Factura: " + refer + "</br>";
@@ -890,6 +892,13 @@ namespace Proveedores.portal
                                             if (ndNodos.Attributes.Count > 0)
                                             {
                                                 importeiva = decimal.Round(Convert.ToDecimal(ndNodos.Attributes["TotalImpuestosTrasladados"].Value), 2);
+                                                try
+                                                {
+                                                    importeret = decimal.Round(Convert.ToDecimal(ndNodos.Attributes["TotalImpuestosRetenidos"].Value), 2);
+                                                }
+                                                catch (Exception)
+                                                {
+                                                }
                                             }
                                         }
                                     }
@@ -913,7 +922,7 @@ namespace Proveedores.portal
                         }
                         if (validarmir7)
                         {
-                            verificarMir7(fecha_xml, listFact[int.Parse(index)].GJAHR.Trim(), importe, importeiva, importesub, moneda, listFact[int.Parse(index)].BELNR.Trim(), ref mensajeval, val_fec, val_impt, val_imps, val_iva, va_mon, importedes); //by jemo 15/
+                            verificarMir7(fecha_xml, listFact[int.Parse(index)].GJAHR.Trim(), importe, importeiva, importeret, importesub, moneda, listFact[int.Parse(index)].BELNR.Trim(), ref mensajeval, val_fec, val_impt, val_imps, val_iva, va_mon, importedes); //by jemo 15/
                         }
                     }
 
@@ -952,7 +961,7 @@ namespace Proveedores.portal
                         //{
                         //    advertencia = "Advertencia: " + advertencia;
                         //}
-                        listFact[int.Parse(index)].DescripcionErrorSAP = "SAP : Valores de XML no coinciden:</br>";// + mensajeval + advertencia;
+                        listFact[int.Parse(index)].DescripcionErrorSAP = "SAP : Valores de XML no coinciden:</br>" + mensajeval;// + advertencia;
                         resulFacturaIncorrecta("SAP", index);
                     }
                     if (j == 0)
@@ -971,13 +980,13 @@ namespace Proveedores.portal
 
 
         }
-        public void verificarMir7(string fechafac, string año, decimal importe, decimal importeIVA, decimal importeSub, string moneda, string numerodoc, ref string mensaje, string val_fec, string val_impt, string val_imps, string val_iva, string val_mon, decimal importedesc)
+        public void verificarMir7(string fechafac, string año, decimal importe, decimal importeIVA, decimal importeRET, decimal importeSub, string moneda, string numerodoc, ref string mensaje, string val_fec, string val_impt, string val_imps, string val_iva, string val_mon, decimal importedesc)
         {
             PNegocio.FacturasNE nFac = new PNegocio.FacturasNE();
             List<string[]> listaDiferentesInstancias = new List<string[]>();
             listaDiferentesInstancias = (List<string[]>)Session["listaDiferentesInstancias"];
             string repuesta =
-             nFac.validardatosMir7(listaDiferentesInstancias, fechafac, año, importe, importeIVA, importeSub, moneda, numerodoc, val_fec, val_impt, val_imps, val_iva, val_mon, importedesc);
+             nFac.validardatosMir7(listaDiferentesInstancias, fechafac, año, importe, importeIVA, importeRET, importeSub, moneda, numerodoc, val_fec, val_impt, val_imps, val_iva, val_mon, importedesc);
             if (repuesta.Contains('N'))
             {
                 mensaje = mensaje + "Error: no se pudo validar algunos datos en SAP.</br>";

@@ -4,245 +4,70 @@
     <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
   </wsdl:documentation>
   <wsp:UsingPolicy wsdl:required="true" />
-  <wsp:Policy wsu:Id="BN__ZWS_UPROVEEDORES">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
-        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
-        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
-        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
-            <wsp:Policy>
-              <sp:TransportToken>
-                <wsp:Policy>
-                  <sp:HttpsToken>
-                    <wsp:Policy>
-                      <sp:HttpBasicAuthentication />
-                    </wsp:Policy>
-                  </sp:HttpsToken>
-                </wsp:Policy>
-              </sp:TransportToken>
-              <sp:AlgorithmSuite>
-                <wsp:Policy>
-                  <sp:Basic128Rsa15 />
-                </wsp:Policy>
-              </sp:AlgorithmSuite>
-              <sp:Layout>
-                <wsp:Policy>
-                  <sp:Strict />
-                </wsp:Policy>
-              </sp:Layout>
-            </wsp:Policy>
-          </sp:TransportBinding>
-        </wsp:All>
-      </wsp:All>
-      <wsp:All>
-        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
-        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
-        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
-        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
-            <wsp:Policy>
-              <sp:TransportToken>
-                <wsp:Policy>
-                  <sp:HttpsToken>
-                    <wsp:Policy>
-                      <sp:HttpBasicAuthentication />
-                    </wsp:Policy>
-                  </sp:HttpsToken>
-                </wsp:Policy>
-              </sp:TransportToken>
-              <sp:AlgorithmSuite>
-                <wsp:Policy>
-                  <sp:Basic128Rsa15 />
-                </wsp:Policy>
-              </sp:AlgorithmSuite>
-              <sp:Layout>
-                <wsp:Policy>
-                  <sp:Strict />
-                </wsp:Policy>
-              </sp:Layout>
-            </wsp:Policy>
-          </sp:TransportBinding>
-        </wsp:All>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="IF_IF_ZWS_UPROVEEDORES">
+    <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+      <sapsession:enableSession>false</sapsession:enableSession>
+    </sapsession:Session>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="BN__ZWS_UPROVEEDORES_soap12">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
-        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
-        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
-        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
-            <wsp:Policy>
-              <sp:TransportToken>
-                <wsp:Policy>
-                  <sp:HttpsToken>
-                    <wsp:Policy>
-                      <sp:HttpBasicAuthentication />
-                    </wsp:Policy>
-                  </sp:HttpsToken>
-                </wsp:Policy>
-              </sp:TransportToken>
-              <sp:AlgorithmSuite>
-                <wsp:Policy>
-                  <sp:Basic128Rsa15 />
-                </wsp:Policy>
-              </sp:AlgorithmSuite>
-              <sp:Layout>
-                <wsp:Policy>
-                  <sp:Strict />
-                </wsp:Policy>
-              </sp:Layout>
-            </wsp:Policy>
-          </sp:TransportBinding>
-        </wsp:All>
-      </wsp:All>
-      <wsp:All>
-        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
-        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
-        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
-        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
-            <wsp:Policy>
-              <sp:TransportToken>
-                <wsp:Policy>
-                  <sp:HttpsToken>
-                    <wsp:Policy>
-                      <sp:HttpBasicAuthentication />
-                    </wsp:Policy>
-                  </sp:HttpsToken>
-                </wsp:Policy>
-              </sp:TransportToken>
-              <sp:AlgorithmSuite>
-                <wsp:Policy>
-                  <sp:Basic128Rsa15 />
-                </wsp:Policy>
-              </sp:AlgorithmSuite>
-              <sp:Layout>
-                <wsp:Policy>
-                  <sp:Strict />
-                </wsp:Policy>
-              </sp:Layout>
-            </wsp:Policy>
-          </sp:TransportBinding>
-        </wsp:All>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_URFC">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="IF__ZWS_UPROVEEDORES">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
-          <sapsession:enableSession>false</sapsession:enableSession>
-        </sapsession:Session>
-        <sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
-          <sapcentraladmin:BusinessApplicationID>12ACA69FE1F81ED78CBA0498AD38E1AF</sapcentraladmin:BusinessApplicationID>
-        </sapcentraladmin:CentralAdministration>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_URES_PROVEEDORES">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_UPAGOS">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_UPARTIDAS_ABIERTAS">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_UFAC_VERIFMIR7">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_UPAGOS">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_UFAC_VERIFICAR">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_URES_SOCIEDADES">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_UFAC_LISTPA">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_UFAC_VERIFMIR7">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_UFAC_CARGADAS">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_UFAC_VERIFICAR">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_UDATA_MASTER">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_UFAC_LISTPA">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_UPARTIDAS_ABIERTAS">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_UFAC_CARGADAS">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_URES_PROVEEDORES">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_URES_SOCIEDADES">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="OP__Z_URFC">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
-        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
-        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
-        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
-      </wsp:All>
-    </wsp:ExactlyOne>
+  <wsp:Policy wsu:Id="OP_IF_OP_Z_UDATA_MASTER">
+    <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+    <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+    <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+    <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
@@ -480,7 +305,7 @@
           <xsd:element name="BELNR" type="tns:char10" />
           <xsd:element name="BWTAR" type="tns:char10" />
           <xsd:element name="KSCHL" type="tns:char4" />
-          <xsd:element name="MATNR" type="tns:char18" />
+          <xsd:element name="MATNR" type="tns:char40" />
           <xsd:element name="GJAHR" type="tns:numeric4" />
         </xsd:sequence>
       </xsd:complexType>
@@ -663,6 +488,7 @@
             <xsd:element name="FISYEAR" type="tns:numeric4" />
             <xsd:element minOccurs="0" name="IMPORTE" type="tns:curr13.2" />
             <xsd:element minOccurs="0" name="IMPORTE_IVA" type="tns:curr13.2" />
+            <xsd:element minOccurs="0" name="IMPORTE_RET" type="tns:curr13.2" />
             <xsd:element minOccurs="0" name="IMPORTE_SUB" type="tns:curr13.2" />
             <xsd:element minOccurs="0" name="IMP_DESCUEN" type="tns:curr13.2" />
             <xsd:element minOccurs="0" name="MONEDA" type="tns:char20" />
@@ -823,283 +649,78 @@
     <wsdl:part name="parameter" element="tns:Z_URFCResponse" />
   </wsdl:message>
   <wsdl:portType name="ZWS_UPROVEEDORES">
-    <wsdl:documentation>
-      <sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
-        <sapdoc:docitem docURL="http://BTCHSDMO00.sanjacintodev.local:8080/sap/bc/esdt/docu/sd_text?sap-client=100&amp;sd_name=ZWS_UPROVEEDORES" />
-      </sapdoc:sapdoc>
-    </wsdl:documentation>
     <wsp:Policy>
-      <wsp:PolicyReference URI="#IF__ZWS_UPROVEEDORES" />
+      <wsp:PolicyReference URI="#IF_IF_ZWS_UPROVEEDORES" />
     </wsp:Policy>
     <wsdl:operation name="Z_UDATA_MASTER">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_UDATA_MASTER" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_UDATA_MASTER" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_UDATA_MASTER" />
       <wsdl:output message="tns:Z_UDATA_MASTERResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_UFAC_CARGADAS">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_UFAC_CARGADAS" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_UFAC_CARGADAS" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_UFAC_CARGADAS" />
       <wsdl:output message="tns:Z_UFAC_CARGADASResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_UFAC_LISTPA">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_UFAC_LISTPA" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_UFAC_LISTPA" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_UFAC_LISTPA" />
       <wsdl:output message="tns:Z_UFAC_LISTPAResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_UFAC_VERIFICAR">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_UFAC_VERIFICAR" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_UFAC_VERIFICAR" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_UFAC_VERIFICAR" />
       <wsdl:output message="tns:Z_UFAC_VERIFICARResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_UFAC_VERIFMIR7">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_UFAC_VERIFMIR7" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_UFAC_VERIFMIR7" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_UFAC_VERIFMIR7" />
       <wsdl:output message="tns:Z_UFAC_VERIFMIR7Response" />
     </wsdl:operation>
     <wsdl:operation name="Z_UPAGOS">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_UPAGOS" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_UPAGOS" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_UPAGOS" />
       <wsdl:output message="tns:Z_UPAGOSResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_UPARTIDAS_ABIERTAS">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_UPARTIDAS_ABIERTAS" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_UPARTIDAS_ABIERTAS" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_UPARTIDAS_ABIERTAS" />
       <wsdl:output message="tns:Z_UPARTIDAS_ABIERTASResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_URES_PROVEEDORES">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_URES_PROVEEDORES" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_URES_PROVEEDORES" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_URES_PROVEEDORES" />
       <wsdl:output message="tns:Z_URES_PROVEEDORESResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_URES_SOCIEDADES">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_URES_SOCIEDADES" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_URES_SOCIEDADES" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_URES_SOCIEDADES" />
       <wsdl:output message="tns:Z_URES_SOCIEDADESResponse" />
     </wsdl:operation>
     <wsdl:operation name="Z_URFC">
       <wsp:Policy>
-        <wsp:PolicyReference URI="#OP__Z_URFC" />
+        <wsp:PolicyReference URI="#OP_IF_OP_Z_URFC" />
       </wsp:Policy>
       <wsdl:input message="tns:Z_URFC" />
       <wsdl:output message="tns:Z_URFCResponse" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="ZWS_UPROVEEDORES" type="tns:ZWS_UPROVEEDORES">
-    <wsp:Policy>
-      <wsp:PolicyReference URI="#BN__ZWS_UPROVEEDORES" />
-    </wsp:Policy>
-    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Z_UDATA_MASTER">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UDATA_MASTERRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_CARGADAS">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_CARGADASRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_LISTPA">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_LISTPARequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_VERIFICAR">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFICARRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_VERIFMIR7">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFMIR7Request" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UPAGOS">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPAGOSRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UPARTIDAS_ABIERTAS">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPARTIDAS_ABIERTASRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_URES_PROVEEDORES">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_PROVEEDORESRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_URES_SOCIEDADES">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_SOCIEDADESRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_URFC">
-      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URFCRequest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-  </wsdl:binding>
-  <wsdl:binding name="ZWS_UPROVEEDORES_soap12" type="tns:ZWS_UPROVEEDORES">
-    <wsp:Policy>
-      <wsp:PolicyReference URI="#BN__ZWS_UPROVEEDORES_soap12" />
-    </wsp:Policy>
-    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Z_UDATA_MASTER">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UDATA_MASTERRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_CARGADAS">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_CARGADASRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_LISTPA">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_LISTPARequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_VERIFICAR">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFICARRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UFAC_VERIFMIR7">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFMIR7Request" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UPAGOS">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPAGOSRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_UPARTIDAS_ABIERTAS">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPARTIDAS_ABIERTASRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_URES_PROVEEDORES">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_PROVEEDORESRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_URES_SOCIEDADES">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_SOCIEDADESRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Z_URFC">
-      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URFCRequest" style="document" />
-      <wsdl:input>
-        <wsoap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsoap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-  </wsdl:binding>
-  <wsdl:service name="ZWS_UPROVEEDORES">
-    <wsdl:port name="ZWS_UPROVEEDORES" binding="tns:ZWS_UPROVEEDORES">
-      <soap:address location="http://BTCHSDMO00.sanjacintodev.local:8080/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores" />
-    </wsdl:port>
-    <wsdl:port name="ZWS_UPROVEEDORES_soap12" binding="tns:ZWS_UPROVEEDORES_soap12">
-      <wsoap12:address location="http://BTCHSDMO00.sanjacintodev.local:8080/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores" />
-    </wsdl:port>
-  </wsdl:service>
 </wsdl:definitions>

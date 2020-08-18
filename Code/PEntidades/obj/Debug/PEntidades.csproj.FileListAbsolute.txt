@@ -179,3 +179,9 @@ C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Prove
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.csprojResolveAssemblyReference.cache
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.dll
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.dll.config
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.csprojAssemblyReference.cache
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.pdb

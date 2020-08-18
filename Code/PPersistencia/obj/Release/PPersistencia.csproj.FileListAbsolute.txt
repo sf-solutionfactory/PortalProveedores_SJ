@@ -174,3 +174,13 @@ C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jas
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.csprojResolveAssemblyReference.cache
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.dll
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\San Jasinto\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\bin\Release\PPersistencia.dll.config
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\bin\Release\PPersistencia.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\bin\Release\PPersistencia.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\bin\Release\PEntidades.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\bin\Release\PEntidades.pdb
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\bin\Release\PEntidades.dll.config
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.csprojAssemblyReference.cache
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.csproj.CopyComplete
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.dll
+C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.pdb

@@ -99,25 +99,25 @@
                         Grupo San Jacinto.
                         </p>
                     <p>
-                        Calle: Vázquez del Mercado No. 134 int. 1, Zona centro,
+                        Calle: Vázquez del Mercado No. 134 int. 1, 
                         <%--Av. Hacienda del Rosario 117--%>
                         <br/>
-                        <%--Tultitlan De Mariano Escobedo C--%>
+                        Zona Centro, Guadalajara,  
                         <%--Real de Bugambilias, León, Gto.--%>
-                        <%--<br/>--%>
+                        <br/>
                         Aguascalientes, Ags.
                         </p>
                     <p>
-
-                        CP: 20000
+						CP: 20000
+                        <%--CP 64640 Monterrey, N.L., Méx.--%>
                         </p>
                     <p>
                         <%--Telefono: (+52) 477 718.6219--%>
-                        Teléfono: 01(449)9155945                       
+                        Teléfono: 01(449)9155945
                         </p>
                     <p>
                         <%--sf-solutionfactory.com--%>
-                    http://www.sanjacinto.com.mx/
+                    www.sanjacinto.com
                         </p>
                     </div>
                 <div>

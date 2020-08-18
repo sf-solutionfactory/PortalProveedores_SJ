@@ -51,8 +51,8 @@ namespace PNegocio
                     verificar.CENTRO = PEntidades.Utiles.objetoSociedad(splitSoc);
                     verificar.F_COMPRA_HIGH = fhigh;
                     verificar.F_COMPRA_LOW = flow;
-                    verificar.F_FAC_HIGH = facthig;
-                    verificar.F_FAC_LOW = factlow;
+                    verificar.FACTURA_HIGH = facthig;
+                    verificar.FACTURA_LOW = factlow;
                     verificar.MONEDA_HIGH = monedahig;
                     verificar.MONEDA_LOW = monedalow;
                     verificar.P_BLOCK = "X";

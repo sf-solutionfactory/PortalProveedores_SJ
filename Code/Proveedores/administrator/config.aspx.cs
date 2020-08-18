@@ -26,6 +26,7 @@ namespace Proveedores.administrator
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            cargarConfigPass();
             if (this.hidCerrarSesion.Value != "cerrar")
             {
             
@@ -441,6 +442,10 @@ namespace Proveedores.administrator
                 txtNumeroLetrasM.Text = lines[1];
                 txtCantidadNumeros.Text = lines[2];
                 txtNumeroCaracteres.Text = lines[3];
+                hidNumeroLetras.Value = lines[0];
+                hidNumeroLetrasM.Value = lines[1];
+                hidCantidadNumeros.Value = lines[2];
+                hidNumeroCaracteres.Value = lines[3];
             }
             else
             {

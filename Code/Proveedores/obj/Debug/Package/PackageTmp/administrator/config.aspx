@@ -3,10 +3,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="pswd_info">
+        <h4>La contraseña debería cumplir con los siguientes requerimientos:</h4>
+        <ul>
+            <li id="letter">Al menos debería tener <strong><%=hidNumeroLetras.Value%> letra/s</strong></li>
+            <li id="capital">Al menos debería tener <strong><%=hidNumeroLetrasM.Value%> letra/s en mayúsculas</strong></li>
+            <li id="number">Al menos debería tener <strong><%=hidCantidadNumeros.Value%> número/s</strong></li>
+            <li id="length">Debería tener <strong><%=hidNumeroCaracteres.Value%> caractere/s</strong> como mínimo</li>
+        </ul>
+    </div>
     <asp:Panel ID="Panel1" runat="server" GroupingText="Configuración global">
         <%--<script src="../js/validarNotNull.js"></script>--%>
         <link href="../css/Orden.css" rel="stylesheet" />
         <script src="../js/validarEmail.js"></script>
+        <script src="../css/passSeguro/ValidaPassSeguro.js"></script>
+        <link href="../css/passSeguro/stylePassSeguro.css" rel="stylesheet" />
         <script>
             $(function () {
                 $("#config").addClass("active");
@@ -24,7 +35,7 @@
                         else {
                             resultEmail1 = true;
                         }
-                    
+
                         if (resultEmail1) {
                             validar();
                         }
@@ -61,13 +72,13 @@
                     revalidaNumeros();
                 });
 
-                
+
 
                 mostrarDialog();
 
             });
 
-            
+
 
             function ocultarCorreoEspecial() {
                 $('#divConfigEspecialCorreo').hide("slow");
@@ -81,14 +92,14 @@
                 $('#ContentPlaceHolder1_hidTipoCorreo').val("configurado");
             }
 
-            
+
 
 
         </script>
 
         <style>
             #ContentPlaceHolder1_lblVernterior {
-                min-width:100px;
+                min-width: 100px;
             }
 
             .btnConfigCorreo, .btnCancel {
@@ -96,65 +107,60 @@
             }
 
             #ContentPlaceHolder1_dpdTipoCuenta,
-             #ContentPlaceHolder1_dpdSufijoEmail,
-            #ContentPlaceHolder1_dpdBloqSociedad
-             {
+            #ContentPlaceHolder1_dpdSufijoEmail,
+            #ContentPlaceHolder1_dpdBloqSociedad {
                 min-height: 15px;
             }
 
             #divConfigEspecialCorreo {
-                border:dashed;
+                border: dashed;
             }
 
             #ContentPlaceHolder1_dpdSufijoEmail, #ContentPlaceHolder1_txtEmail {
                 min-width: 150px;
-                width:150px;
+                width: 150px;
             }
-            
-
-
         </style>
-
         <asp:Label ID="lblDialog" runat="server" title="Informe" Text=""></asp:Label>
 
         <%--<div class="paraDiseno">--%>
-            <table class="tblFm tblFm3">
-                <tr>
-                    <td>Estatus del portal
-                    </td>
-                    <td>
-                        <asp:RadioButtonList ID="rdbPortal" runat="server">
-                            <asp:ListItem>Activado</asp:ListItem>
-                            <asp:ListItem>Desactivado</asp:ListItem>
-                        </asp:RadioButtonList>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Umbral de usuarios por proveedor
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtUmbral" runat="server" onkeypress="return soloNumeros2(event)" CssClass="soloNumeros2" value="5" MaxLength="2"></asp:TextBox>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>Bloqueo de sociedad</td>
-                    <td>
-                        <asp:DropDownList ID="dpdBloqSociedad" runat="server">
-                            <asp:ListItem>1 = N</asp:ListItem>
-                            <asp:ListItem>1 = 1</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                </tr>
-               
-            </table>
+        <table class="tblFm tblFm3">
+            <tr>
+                <td>Estatus del portal
+                </td>
+                <td>
+                    <asp:RadioButtonList ID="rdbPortal" runat="server">
+                        <asp:ListItem>Activado</asp:ListItem>
+                        <asp:ListItem>Desactivado</asp:ListItem>
+                    </asp:RadioButtonList>
+                </td>
+            </tr>
+            <tr>
+                <td>Umbral de usuarios por proveedor
+                </td>
+                <td>
+                    <asp:TextBox ID="txtUmbral" runat="server" onkeypress="return soloNumeros2(event)" CssClass="soloNumeros2" value="5" MaxLength="2"></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Bloqueo de sociedad</td>
+                <td>
+                    <asp:DropDownList ID="dpdBloqSociedad" runat="server">
+                        <asp:ListItem>1 = N</asp:ListItem>
+                        <asp:ListItem>1 = 1</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+
+        </table>
         <%--</div>--%>
     </asp:Panel>
     <br />
 
     <asp:Panel ID="Panel2" runat="server" GroupingText="Correo">
         <%--<div class="paraDiseno">--%>
-        <table class="tblFm tblFm3 tablaEmailNormal" >
+        <table class="tblFm tblFm3 tablaEmailNormal">
             <tr>
                 <td>Email</td>
                 <td>
@@ -165,7 +171,7 @@
                         <asp:ListItem>@hotmail.com</asp:ListItem>
                         <asp:ListItem>@outlook.com</asp:ListItem>
                     </asp:DropDownList>
-                   </td>
+                </td>
             </tr>
             <tr>
                 <td>Contraseña
@@ -181,73 +187,72 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" class="txtValidar"></asp:TextBox>
-                    </td>
+                </td>
             </tr>
             <tr>
-                <td>
-                </td>
+                <td></td>
                 <td>
                     <div class="btn btnConfigCorreo">Configuración especial...</div>
                 </td>
             </tr>
         </table>
-        
-          <table id="divConfigEspecialCorreo" class="tblFm tblFm3">
-                <tr>
-                    <td><strong>Tipo de servidor</strong></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>SMTP</td>
-                    <td>
-                        <asp:TextBox ID="txtSMTP" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Puerto</td>
-                    <td>
-                        <asp:TextBox ID="txtPuerto" runat="server" class="soloNumeros2" onkeypress="return soloNumeros2(event)" ></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>SSL</td>
-                    <td>
-                        <asp:CheckBox ID="chkSSL" runat="server" Text="SSL" />
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Información de inicio de sesión</strong></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Correo</td>
-                    <td>
-                        <asp:TextBox ID="txtCorreoServidorCorreo" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Contraseña</td>
-                    <td>
-                        <asp:TextBox ID="txtContraServidorCorreo" TextMode="Password" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-              <tr>
-                    <td>Repite contraseña</td>
-                    <td>
-                        <asp:TextBox ID="txtRepiteContraServidorCorreo" TextMode="Password" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="btn btnCancel">
-                            Cancelar
-                        </div>
-                    </td>
-                </tr>
-         </table>
-                
-    <table class="tblFm tblFm3">
+
+        <table id="divConfigEspecialCorreo" class="tblFm tblFm3">
+            <tr>
+                <td><strong>Tipo de servidor</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>SMTP</td>
+                <td>
+                    <asp:TextBox ID="txtSMTP" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Puerto</td>
+                <td>
+                    <asp:TextBox ID="txtPuerto" runat="server" class="soloNumeros2" onkeypress="return soloNumeros2(event)"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>SSL</td>
+                <td>
+                    <asp:CheckBox ID="chkSSL" runat="server" Text="SSL" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Información de inicio de sesión</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Correo</td>
+                <td>
+                    <asp:TextBox ID="txtCorreoServidorCorreo" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Contraseña</td>
+                <td>
+                    <asp:TextBox ID="txtContraServidorCorreo" TextMode="Password" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Repite contraseña</td>
+                <td>
+                    <asp:TextBox ID="txtRepiteContraServidorCorreo" TextMode="Password" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="btn btnCancel">
+                        Cancelar
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="tblFm tblFm3">
             <tr>
                 <td>Asunto</td>
                 <td>
@@ -261,7 +266,7 @@
                 </td>
             </tr>
         </table>
-    <%--</div>--%>
+        <%--</div>--%>
     </asp:Panel>
     <br />
     <asp:Panel ID="Panel3" runat="server" GroupingText="Seguridad">
@@ -304,114 +309,137 @@
             <tr>
                 <td>Numero de letras</td>
                 <td>
-                    <asp:TextBox ID="txtNumeroLetras" runat="server" class="txtValidar soloNumeros2" MaxLength="3"  onkeypress="return soloNumeros2(event)"></asp:TextBox>
+                    <asp:TextBox ID="txtNumeroLetras" runat="server" class="txtValidar soloNumeros2" MaxLength="3" onkeypress="return soloNumeros2(event)"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Numero de letras en Mayuscúla</td>
                 <td>
-                    <asp:TextBox ID="txtNumeroLetrasM" runat="server" class="txtValidar soloNumeros2" MaxLength="3"  onkeypress="return soloNumeros2(event)"></asp:TextBox>
+                    <asp:TextBox ID="txtNumeroLetrasM" runat="server" class="txtValidar soloNumeros2" MaxLength="3" onkeypress="return soloNumeros2(event)"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Cantidad de números</td>
                 <td>
-                    <asp:TextBox ID="txtCantidadNumeros" runat="server" class="txtValidar soloNumeros2" MaxLength="3"  onkeypress="return soloNumeros2(event)"></asp:TextBox>
+                    <asp:TextBox ID="txtCantidadNumeros" runat="server" class="txtValidar soloNumeros2" MaxLength="3" onkeypress="return soloNumeros2(event)"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Numero de caracteres</td>
                 <td>
-                    <asp:TextBox ID="txtNumeroCaracteres" runat="server" class="txtValidar soloNumeros2" MaxLength="3"  onkeypress="return soloNumeros2(event)"></asp:TextBox>
+                    <asp:TextBox ID="txtNumeroCaracteres" runat="server" class="txtValidar soloNumeros2" MaxLength="3" onkeypress="return soloNumeros2(event)"></asp:TextBox>
                 </td>
             </tr>
         </table>
     </asp:Panel>
-
+    <asp:Panel ID="Panel7" runat="server" GroupingText="COntraseña Admin">
+        <table class="tblFm tblFm3">
+            <tr>
+                <td>Antigua Contaseña</td>
+                <td>
+                    <asp:TextBox ID="TextBox1" runat="server" TextMode="Password" class="txtbox focusTxt txtValidar"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Confirmar Antigua Contaseña</td>
+                <td>
+                    <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" class="txtbox focusTxt txtValidar"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Nueva Contaseña</td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" class="txtbox focusTxt txtValidar"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Confirmar Nueva Contaseña</td>
+                <td>
+                    <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" class="txtbox focusTxt txtValidar"></asp:TextBox></td>
+            </tr>
+        </table>
+    </asp:Panel>
     <asp:Panel ID="Panel5" runat="server" GroupingText="XML:">
         <table class="tblFm tblFm3">
             <tr>
                 <td>Maximo de XML permitidos para adjuntar</td>
                 <td>
-                    <asp:TextBox ID="txtMaxXML" runat="server" class="txtValidar soloNumeros2" MaxLength="3"  onkeypress="return soloNumeros2(event)"></asp:TextBox>
+                    <asp:TextBox ID="txtMaxXML" runat="server" class="txtValidar soloNumeros2" MaxLength="3" onkeypress="return soloNumeros2(event)"></asp:TextBox>
                 </td>
             </tr>
         </table>
     </asp:Panel>
-    
+
     <asp:Panel ID="Panel4" runat="server" GroupingText="Opciones:">
-        
-    <br />
-    <br />
+
+        <br />
+        <br />
 
         <style>
             table.opciones.primerTd {
-                width:40%;
+                width: 40%;
             }
 
             .primerTd {
-                width:40%;
-                /*padding-rigt:3em;*/    
+                width: 40%;
+                /*padding-rigt:3em;*/
             }
 
             .segundoTd {
-                padding-left:3em;           
+                padding-left: 3em;
             }
 
             #ContentPlaceHolder1_dpdBloqSociedad {
-                height:12px;
-                min-height:25px;
+                height: 12px;
+                min-height: 25px;
             }
-            
         </style>
 
-    <table class="opciones tblFm">
-        <thead>
-            <tr>
-                <th>
-                    <table class="tblFm2">
-                        <tr>
-                            <td><strong>Seleccione:</strong></td>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-               <td class="primerTd">
-                   <asp:Label ID="lblInfoGuardar" runat="server" Text=""></asp:Label>
-               </td>
-               <td class="segundoTd">
-                   <asp:Button ID="btnEnviarConfig" runat="server" OnClick="btnEnviarConfig_Click" Text="Guardar" CssClass="btn" /> 
-               </td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Label ID="lblAdvertencia" runat="server" Text=""></asp:Label>
-                    <asp:Label ID="lblLeyendaConfigAnterior" runat="server" Text="Para ver la configuración anterior presione este botón "></asp:Label>
-                    <asp:Label ID="lblLeyendaConfigAnterior2" runat="server" Text="Para recuperar la configuración anterior presione este botón: "></asp:Label>
-                </td>
-                <td class="segundoTd">
-                    <br />
-                    <asp:Label ID="lblVernterior" runat="server" CssClass="btn" Text=""></asp:Label>
-                    <br />
-                    <asp:Button ID="btnRecuperarAnterior" runat="server" CssClass="btn" OnClick="btnRecuperarAnterior_Click" Text="Restablecer" />
-                    <br/>
-                    <br/>
-                    
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td class="segundoTd"><asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" Text="Cancelar" CssClass="btn" /></td>
-            </tr>
-        </tbody>
-    </table>
+        <table class="opciones tblFm">
+            <thead>
+                <tr>
+                    <th>
+                        <table class="tblFm2">
+                            <tr>
+                                <td><strong>Seleccione:</strong></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="primerTd">
+                        <asp:Label ID="lblInfoGuardar" runat="server" Text=""></asp:Label>
+                    </td>
+                    <td class="segundoTd">
+                        <asp:Button ID="btnEnviarConfig" runat="server" OnClick="btnEnviarConfig_Click" Text="Guardar" CssClass="btn" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lblAdvertencia" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="lblLeyendaConfigAnterior" runat="server" Text="Para ver la configuración anterior presione este botón "></asp:Label>
+                        <asp:Label ID="lblLeyendaConfigAnterior2" runat="server" Text="Para recuperar la configuración anterior presione este botón: "></asp:Label>
+                    </td>
+                    <td class="segundoTd">
+                        <br />
+                        <asp:Label ID="lblVernterior" runat="server" CssClass="btn" Text=""></asp:Label>
+                        <br />
+                        <asp:Button ID="btnRecuperarAnterior" runat="server" CssClass="btn" OnClick="btnRecuperarAnterior_Click" Text="Restablecer" />
+                        <br />
+                        <br />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="segundoTd">
+                        <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" Text="Cancelar" CssClass="btn" /></td>
+                </tr>
+            </tbody>
+        </table>
 
     </asp:Panel>
 
-    
+
     <br />
 
     <asp:HiddenField ID="hidVerificar" runat="server" Value="si" />
@@ -421,6 +449,10 @@
     <asp:HiddenField ID="hidTipoCorreo" runat="server" />
 
     <asp:HiddenField ID="hidloadconfpass" runat="server" />
+    <asp:HiddenField ID="hidNumeroLetras" runat="server" />
+    <asp:HiddenField ID="hidNumeroLetrasM" runat="server" />
+    <asp:HiddenField ID="hidCantidadNumeros" runat="server" />
+    <asp:HiddenField ID="hidNumeroCaracteres" runat="server" />
     <asp:HiddenField ID="hidCerrarSesion" runat="server" />
 
 </asp:Content>

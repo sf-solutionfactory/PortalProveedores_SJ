@@ -86,7 +86,7 @@ function workThis(button) {
                 desicion: textoBoton,
                 complemento: complemento,
                 valor2: val2,
-                valor3: "",
+                valor3: val3,
                 valor4: val4
             },
             function (data) {

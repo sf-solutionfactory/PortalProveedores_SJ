@@ -205,9 +205,9 @@
 
         <div id="divHeader">
             <div class="left">
-                <img src="../images/logo_sanjacinto.png" />
-                <%--<img src="http://sf-solutionfactory.com/support/images/Solution_Logo.png" />--%>
-                <%--<img src="http://www.arcacontal.com/images/arca_logo.jpg" />--%>
+                <%--<img src="../images/Trascam_logo.png" Gonher_logo />--%>
+				<img src="../images/logo_sanjacinto.png" />
+                <%--<img src="http://sf-solutionfactory.com/support/images/Solution_Logo.png" />--%>                
             </div>
             <div id="wrapMenu" class="left">
                 <ul id="menu">
@@ -287,20 +287,6 @@
         </div>
     </form>
    
-    <%--<div id="divFooter">
-        <div style="height: auto;">
-            <div id="left">
-                Arca Continental S.A.B. de C.V., Derechos reservados ©2012
-                <br>
-                Av. San Jerónimo 813 Pte. C.P. 64640, Monterrey, México
-            </div>
-            <div id="right">
-                <img src="http://www.arcacontal.com/images/AC_footer.jpg">
-                <img src="http://www.arcacontal.com/images/EmpresaSustentable_footer.jpg">
-                <img src="http://www.arcacontal.com/images/SocialmenteResponsable_footer.jpg">
-            </div>
-        </div>
-    </div>--%>
      <div id="ventana-flotante">
 </div>
 </body>

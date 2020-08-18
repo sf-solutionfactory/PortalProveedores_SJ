@@ -18,10 +18,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://BTCHSDMO00.sanjacintodev.local:8080/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores?sap-client=100" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://Devawssc01.sicsa.proatech.mx:8000/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores?sap-client=100" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="zws_uproveedores1.wsdl" MetadataType="Wsdl" ID="04cd5770-2aa2-4bbf-bcda-52745ed55e61" SourceId="1" SourceUrl="http://btchsdmo00.sanjacintodev.local:8080/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores?sap-client=100" />
+    <MetadataFile FileName="zws_uproveedores.wsdl" MetadataType="Wsdl" ID="7905c29d-5ead-47fa-b998-156246fac7b8" SourceId="1" SourceUrl="http://devawssc01.sicsa.proatech.mx:8000/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores?sap-client=100" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

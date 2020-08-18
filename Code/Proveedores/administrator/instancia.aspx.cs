@@ -206,7 +206,7 @@ namespace Proveedores.administrator
                                     if (RFC != "" && RFC != null)
                                     {
                                         PNegocio.Administrador.Instancia instancia = new PNegocio.Administrador.Instancia();
-                                        string sqlString = "update instancia set RFC = '" + RFC + "', sociedad = '" + this.txtMiSociedad.Text.Trim() + "'  where endpointAdd like '" + endpoint + "' and usuario = '" + userPass[0] + "' and pass = '" + userPass[1] + "'; select @@ROWCOUNT";
+                                        string sqlString = "update instancia set RFC = '" + RFC + "', sociedad = '" + this.txtMiSociedad.Text.Trim() + "'  where descripcion like '" + descripcion + "' and usuario = '" + userPass[0] + "' and pass = '" + userPass[1] + "'; select @@ROWCOUNT";
                                         List<string[]> res = null;
                                         res = instancia.insertarRFCPorInstancia(sqlString);
                                     }

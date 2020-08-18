@@ -9,7 +9,7 @@ namespace PNegocio
     public class CargarFactura
     {
 
-        public int setFacturascargadasNew(string bukrs, string correo, string ebeln, string lifnr, string msjsap, string msgsat, string estatus, string tipo, 
+        public int setFacturascargadasNew(string bukrs, string correo, string ebeln, string lifnr, string msjsap, string msgsat, string estatus, string tipo,
             string werks, string xblnr, string fecha_xml, string xmlfile, string endpoint, string[] userPass, byte[] raw, string uuid, decimal total,
             string numeroItem, string BELNR, string BWTAR, string KSCHL, string tipoarchivo, byte[] rawpdf, string pdffile, decimal retencion)
         {
@@ -17,7 +17,7 @@ namespace PNegocio
             PEntidades.SrvSAPUProv.Z_UFAC_CARGADASResponse result;
             PEntidades.SrvSAPUProv.Z_UFAC_CARGADAS cargadas = new PEntidades.SrvSAPUProv.Z_UFAC_CARGADAS();
             int res = 0;
-                PEntidades.SrvSAPUProv.ZWS_UPROVEEDORESClient srv = new PPersistencia.WebServices().getZWS_UPROVEEDORESInstanceNew(endpoint, userPass);
+            PEntidades.SrvSAPUProv.ZWS_UPROVEEDORESClient srv = new PPersistencia.WebServices().getZWS_UPROVEEDORESInstanceNew(endpoint, userPass);
             cargadas.BELNR = BELNR;
             cargadas.BUKRS = bukrs;
             cargadas.BWTAR = BWTAR;
@@ -42,18 +42,26 @@ namespace PNegocio
             cargadas.XBLNR = xblnr;
             cargadas.XMLFILE = xmlfile;
             cargadas.ZCFDI_UUID = uuid;
-                srv.Open();
-                srv.InnerChannel.OperationTimeout = new TimeSpan(0, 10, 0);
-                result = srv.Z_UFAC_CARGADAS(cargadas);
-                srv.Close();
-                if (result.RESULT != "" && result != null)
+            srv.Open();
+            srv.InnerChannel.OperationTimeout = new TimeSpan(0, 10, 0);
+            result = srv.Z_UFAC_CARGADAS(cargadas);
+            srv.Close();
+            if (result.RESULT != "" && result != null)
+            {
+                try
                 {
                     res = int.Parse(result.RESULT.Trim());
                 }
+                catch (Exception)
+                {
+                    res = 1;
+                }
+
+            }
             return res;
         }
 
-        public int desvincular(List<string[]> listaDiferentesInstancias, string [] uuid)
+        public int desvincular(List<string[]> listaDiferentesInstancias, string[] uuid)
         {
             PEntidades.SrvSAPUProv.ZEDATA_UUID[] objetoUui = PEntidades.Utiles.objetoUuid(uuid);
             PEntidades.SrvSAPUProv.Z_UFAC_CARGADAS cargadas = new PEntidades.SrvSAPUProv.Z_UFAC_CARGADAS();

@@ -79,7 +79,7 @@
         }
         $(document).ready(function () {
             if ($(".consola").val() != 'Cargada correctamente') {
-                $(".consola").css({ 'font-size': '2.1em' });
+                $(".consola").css({ 'font-size': '1.1em' });
             }
             else {
                 $(".consola").css({ 'font-size': '4em' });
@@ -94,7 +94,14 @@
         }
 
         .consola {
-            font-family: fantasy;
+            font-family: serif;
+            line-height: 0.8;
+            /*font-size: auto;*/
+        }
+        .error {
+            font-family: serif;
+            line-height: 0.8;
+            font-size: 2.1em;
             /*font-size: auto;*/
         }
     </style>
@@ -133,7 +140,7 @@
                     <div id="divConsola" style="width: 340px;height: 277px;border: 3px solid #0B2161; background:#CCCCCC;margin-left:510px;padding:10px;color:#333333;">
                         
                         <%--<asp:Label ID="lblConsola" runat="server" Text="" CssClass="consola"></asp:Label>--%>
-                        <asp:Label ID="lblConsola" runat="server" Text="" CssClass=""></asp:Label>
+                        <asp:Label ID="lblConsola" runat="server" Text="" CssClass="error"></asp:Label>
                         <%--<label class="consola">ASK</label>--%> 
                         <br />
                         <asp:Label ID="lblIdEstatus" runat="server" CssClass="lblIdEstatus" Visible="False"></asp:Label>

@@ -105,7 +105,7 @@
                 if ($(this).is(':checked')) {
                     $("#rowInicioV").hide();
                     $("#rowFinV").hide();
-                    $("#<%=datepicker.ClientID%>").val("01/01/1900");
+                    $("#<%=datepicker.ClientID%>").val("01/01/2010");
                     $("#<%=datepicker2.ClientID%>").val("12/31/2099");
                 }
                 else {

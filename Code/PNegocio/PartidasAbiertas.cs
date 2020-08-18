@@ -104,8 +104,9 @@ namespace PNegocio
                 }
                 catch (Exception e)
                 {
-                    status[j] = "Error al cargar en la instancia: " + listaDiferentesInstancias[j][6];
-                    status[j] += "" + e;
+                    status[j] = "Error al cargar datos, reintente o vuelva a intentarlo más tarde.";
+                    //status[j] = "Error al cargar en la instancia: " + listaDiferentesInstancias[j][6];
+                    //status[j] += "" + e;
                 }
             }
             return list;

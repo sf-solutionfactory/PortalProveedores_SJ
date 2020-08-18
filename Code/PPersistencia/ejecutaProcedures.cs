@@ -440,8 +440,8 @@ namespace PPersistencia
             SqlCommand.Parameters.AddWithValue("@id", id);
             SqlCommand.Parameters.AddWithValue("@titulo", titulo);
             SqlCommand.Parameters.AddWithValue("@body", body);
-            SqlCommand.Parameters.AddWithValue("@fechaInicio", fechaInicio);
-            SqlCommand.Parameters.AddWithValue("@fechaFin", fechaFin);
+            SqlCommand.Parameters.AddWithValue("@fechaInicio", fechaInicio).DbType = DbType.DateTime;
+            SqlCommand.Parameters.AddWithValue("@fechaFin", fechaFin).DbType = DbType.DateTime;
             SqlCommand.Parameters.AddWithValue("@URLImagen", URLImagen);
             SqlCommand.Parameters.AddWithValue("@tipoNoticia", tipoNoticia);
             SqlDataReader datareader = SqlCommand.ExecuteReader();

@@ -103,7 +103,7 @@
     <None Include="Service References\SrvSAPUProv\PEntidades.SrvSAPUProv.Z_URFCResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\SrvSAPUProv\zws_uproveedores1.wsdl" />
+    <None Include="Service References\SrvSAPUProv\zws_uproveedores.wsdl" />
     <None Include="Service References\SrvSATConsultaCFDI\ConsultaCFDIService.wsdl" />
     <None Include="Service References\SrvSATConsultaCFDI\ConsultaCFDIService.xsd">
       <SubType>Designer</SubType>

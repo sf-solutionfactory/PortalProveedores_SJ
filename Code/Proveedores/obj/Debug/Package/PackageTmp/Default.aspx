@@ -26,9 +26,11 @@
     </style>
 
     <center>
+        
         <div class="login">
             <div class="divImg">
                 <img src="images/candadoCerrado.png" />
+                
             </div>
             <asp:Label ID="lblPortalProveedores" CssClass="titleText" runat="server" Text="Portal de Proveedores"></asp:Label>
             <br />

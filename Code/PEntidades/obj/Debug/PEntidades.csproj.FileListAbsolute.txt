@@ -167,3 +167,15 @@ C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Ja
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.dll
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.pdb
 C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.dll.config
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.dll.config
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\bin\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PEntidades\obj\Debug\PEntidades.pdb

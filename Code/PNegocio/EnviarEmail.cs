@@ -21,7 +21,7 @@ namespace PNegocio
                 string codehtmlini = "<html><head><title>Bienvenido</title>" +
                 "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=iso-8859-1\"></head><body>" +
                 "<div align=\"center\">" +
-                "<img src=\"http://www.sanjacinto.com.mx/images/san-jacinto-quesos-logo-header-u175.png?\" />" +
+                "<img src=\"http://imageshack.com/a/img924/1765/dQ7ew7.jpg\" />" +
                 //"<img src=\"http://sf-solutionfactory.com/images/logo.png\" />" +
                 "<p style=\"font-family: Arial, Helvetica Neue, Helvetica, sans-serif; color: #000000; font-size: 16px;" +
                 "'line-height: 18px; text-align: center;\">";

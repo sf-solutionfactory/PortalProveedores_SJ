@@ -15,10 +15,21 @@ $(function(){
        });
     });
     
-    $(".tblCV tr:nth-child(2n+1) td:first-child").addClass("tblCV-CamImpar");
-    $(".tblCV tr:nth-child(2n) td:first-child").addClass("tblCV-CamPar");
-    $(".tblCV tr:nth-child(2n) td").addClass("tblCV-ValPar");
-    $(".tblCV tr:nth-child(2n+1) td").addClass("tblCV-ValImpar");
+    $(".tblCV").each(function (index, element) {
+        if (index === 0) {
+            $("tr:nth-child(2n+1) td:first-child", this).addClass("tblCV-CamImparE");
+            $("tr:nth-child(2n) td:first-child", this).addClass("tblCV-CamPar");
+            $("tr:nth-child(2n) td", this).addClass("tblCV-ValPar");
+            $("tr:nth-child(2n+1) td", this).addClass("tblCV-ValImpar");
+        }
+        else {
+            $("tr:nth-child(2n+1) td:first-child", this).addClass("tblCV-CamImpar");
+            $("tr:nth-child(2n) td:first-child", this).addClass("tblCV-CamPar");
+            $("tr:nth-child(2n) td", this).addClass("tblCV-ValPar");
+            $("tr:nth-child(2n+1) td", this).addClass("tblCV-ValImpar");
+        }
+
+    });
 //        $("#msgCloser").click(function(){
 //            $("#pop-up").hide();
     //        });

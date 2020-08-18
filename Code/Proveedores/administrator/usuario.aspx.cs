@@ -198,7 +198,7 @@ namespace Proveedores.administrator
                     this.cmbRol.Text = listaProveedor[1][9];
                     this.datepicker.Text = Gen.Util.CS.Gen.convertirFechaBDaFormatoJq(listaProveedor[1][4].ToString());
                     this.datepicker2.Text = Gen.Util.CS.Gen.convertirFechaBDaFormatoJq(listaProveedor[1][5].ToString());
-                    if (this.datepicker.Text.Equals("01/01/1900") && this.datepicker2.Text.Equals("12/31/2099"))
+                    if (this.datepicker.Text.Equals("01/01/2010") && this.datepicker2.Text.Equals("12/31/2099"))
                     {
                         this.ckbVigenciaIlimitada.Checked = true;
                     }
@@ -383,7 +383,7 @@ namespace Proveedores.administrator
             email2 = this.txtIdemailRepetir.Text.Trim();
             rol = this.cmbRol.Text.Trim();
             string mensaje = "Estimado proveedor su cuenta en nuestro portal de proveedores ha sido modificada. <br>";
-            string asunto = "Portal Tracusa, modificación de usuario.";
+            string asunto = "Portal Gonher, modificación de usuario.";
             creadoPor = "0"; // int
             
             
@@ -522,7 +522,7 @@ namespace Proveedores.administrator
                     {
                         mensaje += "Rol nuevo: " + rol + "<br>";
                     }
-                    mensaje += "Ingrese a: http://www.sanjacinto.com.mx/";
+                    mensaje += "Ingrese a: www.sanjacinto.com";
                     string[] numeros = obtenerSociedades(); // numerador de las filas
                     List<string[]> listaSociedades = obtenerDatsSocSel(numeros); // las sociedades que hacen referencia al numerador 
             
@@ -578,7 +578,7 @@ namespace Proveedores.administrator
                 List<int> listaEvitar = new List<int>();
                 this.ltlTablaSociedades.Text = Gen.Util.CS.Gen.convertToHtmlTableDelete2(resultado, "", "tblComun toCheck' style='width:" + "90%" + ";", listaEvitar, false, false, false, false, 0, 1, true, listaNumeros);
                 //this.ltlTablaSociedades.Text = Gen.Util.CS.Gen.convertToHtmlTableDelete(resultado, "", "tblComun toCheck' style='width:" + "90%" + ";", listaEvitar, false, false, false, false, 1, 1);
-
+                this.ltlTablaSociedades.Text = this.ltlTablaSociedades.Text.Replace("False", "Inactivo");
                 Session["TablaSociedades"] = resultado;
             }
             else

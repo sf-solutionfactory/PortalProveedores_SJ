@@ -13,15 +13,6 @@ namespace Proveedores.portal {
     public partial class Facturas {
         
         /// <summary>
-        /// Control txtRef1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRef1;
-        
-        /// <summary>
         /// Control txtRef2.
         /// </summary>
         /// <remarks>
@@ -31,13 +22,13 @@ namespace Proveedores.portal {
         protected global::System.Web.UI.WebControls.TextBox txtRef2;
         
         /// <summary>
-        /// Control txtMoneda1.
+        /// Control txtRef1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMoneda1;
+        protected global::System.Web.UI.WebControls.TextBox txtRef1;
         
         /// <summary>
         /// Control txtMoneda2.
@@ -49,13 +40,13 @@ namespace Proveedores.portal {
         protected global::System.Web.UI.WebControls.TextBox txtMoneda2;
         
         /// <summary>
-        /// Control datepicker.
+        /// Control txtMoneda1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox datepicker;
+        protected global::System.Web.UI.WebControls.TextBox txtMoneda1;
         
         /// <summary>
         /// Control datepicker2.
@@ -65,6 +56,15 @@ namespace Proveedores.portal {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox datepicker2;
+        
+        /// <summary>
+        /// Control datepicker.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox datepicker;
         
         /// <summary>
         /// Control btnActualizaX.

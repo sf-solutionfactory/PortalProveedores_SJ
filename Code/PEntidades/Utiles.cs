@@ -157,8 +157,10 @@ namespace PEntidades
         {
             List<ArrTablas> tablas = new List<ArrTablas>();
             List<string[]> tab = new List<string[]>();
+            List<string[]> otro = new List<string[]>();
             tab.Add(tabla[0]);
-            string[] r_letras = { "0|1|2|3|4|5|6|7|8|9", "a|A", "b|B", "c|C", "d|D", "e|E", "f|F", "g|G", "h|H", "i|I", "j|J", "k|K", "l|L", "m|M", "n|N", "ñ|Ñ", "o|O", "p|P", "q|Q", "r|R", "s|S", "t|T", "u|U", "v|V", "w|W", "x|X", "y|Y", "z|Z", "Otros"};
+            otro.Add(tabla[0]);
+            string[] r_letras = { "0|1|2|3|4|5|6|7|8|9", "a|A|á|Á", "b|B", "c|C", "d|D", "e|E|é|É", "f|F", "g|G", "h|H", "i|I|í|Í", "j|J", "k|K", "l|L", "m|M", "n|N", "ñ|Ñ", "o|O|ó|Ó", "p|P", "q|Q", "r|R", "s|S", "t|T", "u|U|ú|Ú", "v|V", "w|W", "x|X", "y|Y", "z|Z", "Otros" };
             int cont = 0;
             string valor = "";
             bool otros = false;
@@ -169,8 +171,9 @@ namespace PEntidades
                 {
                     if (otros)
                     {
-                        tab.Add(tabla[i]);
+                        otro.Add(tabla[i]);
                         otros = false;
+
                     }
                     else
                     {
@@ -188,23 +191,38 @@ namespace PEntidades
                         }
                         else
                         {
-                            tablas.Add(new ArrTablas(tab, r_letras[cont]));
-                            tab = new List<string[]>();
-                            tab.Add(tabla[0]);
-                            cont++;
-                            if (cont <= (r_letras.Length - 2))
+                            if (tab.Count == 1)
                             {
+                                cont++;
+                                if (cont == (r_letras.Length - 1))
+                                {
+                                    otros = true;
+                                    cont = 0;
+                                }
                                 r = new Regex(r_letras[cont]);
+                                i--;
                             }
-                            if (cont == (r_letras.Length-1))
+                            else
                             {
-                                otros = true;
+                                tablas.Add(new ArrTablas(tab, r_letras[cont]));
+                                tab = new List<string[]>();
+                                tab.Add(tabla[0]);
+                                cont++;
+                                if (cont <= (r_letras.Length - 2))
+                                {
+                                    r = new Regex(r_letras[cont]);
+                                }
+                                if (cont == (r_letras.Length - 1))
+                                {
+                                    otros = true;
+                                }
+                                i--;
                             }
-                            i--;
                         }
                     }
                 }
                 tablas.Add(new ArrTablas(tab, r_letras[cont]));
+                tablas.Add(new ArrTablas(otro, r_letras[28]));
                 cont++;
                 if (cont<(r_letras.Length))
                 {

@@ -18,6 +18,7 @@ namespace Proveedores.portal
         private System.Xml.XmlDocument xmlDoc;
         XElement xmlFact;
         string[] indexs;
+        string[] indexs2;
         int maxXML = 10;
         string complementoMsgError = "";
 
@@ -96,8 +97,11 @@ namespace Proveedores.portal
             string clase = "show";
             if (listFact.Count > 0)
             {
+                indexs2 = new string[indexs.Length + 1];                
                 int iddetalle = int.Parse(indexs[0]) - 1;
-                for (int i = 0; i < indexs.Length; i++)
+                indexs2[0] = iddetalle.ToString();
+                indexs.CopyTo(indexs2, 1);
+                for (int i = 0; i < indexs2.Length; i++)
                 {
                     //listFact[int.Parse(indexs[i])].consola = "";
                     tablas += "<table class='tblCV' " + clase + ">";
@@ -117,7 +121,7 @@ namespace Proveedores.portal
                     tablas += "Proveedor";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].LIFNR;
+                    tablas += listFact[int.Parse(indexs2[i])].LIFNR;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -126,7 +130,7 @@ namespace Proveedores.portal
                     tablas += "Sociedad";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].BUKRS;
+                    tablas += listFact[int.Parse(indexs2[i])].BUKRS;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -135,7 +139,7 @@ namespace Proveedores.portal
                     tablas += "Centro";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].WERKS;
+                    tablas += listFact[int.Parse(indexs2[i])].WERKS;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -144,7 +148,7 @@ namespace Proveedores.portal
                     tablas += "Fecha MIGO/BASE";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].BUDAT;
+                    tablas += listFact[int.Parse(indexs2[i])].BUDAT;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -153,7 +157,7 @@ namespace Proveedores.portal
                     tablas += "Fecha del documento";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].BLDAT;
+                    tablas += listFact[int.Parse(indexs2[i])].BLDAT;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -162,7 +166,7 @@ namespace Proveedores.portal
                     tablas += "Importe";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].WRBTR;
+                    tablas += listFact[int.Parse(indexs2[i])].WRBTR;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -171,7 +175,7 @@ namespace Proveedores.portal
                     tablas += "Importe IVA";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].IVA;
+                    tablas += listFact[int.Parse(indexs2[i])].IVA;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -180,7 +184,7 @@ namespace Proveedores.portal
                     tablas += "IVA";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].MWSKZ;
+                    tablas += listFact[int.Parse(indexs2[i])].MWSKZ;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -189,7 +193,7 @@ namespace Proveedores.portal
                     tablas += "Retención";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].RETENCION;
+                    tablas += listFact[int.Parse(indexs2[i])].RETENCION;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -198,7 +202,7 @@ namespace Proveedores.portal
                     tablas += "Moneda";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].WAERS;
+                    tablas += listFact[int.Parse(indexs2[i])].WAERS;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -207,7 +211,7 @@ namespace Proveedores.portal
                     tablas += "Factura Elec.";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].ELECT;
+                    tablas += listFact[int.Parse(indexs2[i])].ELECT;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -216,7 +220,7 @@ namespace Proveedores.portal
                     tablas += "Saldo";
                     tablas += "</td>";
                     tablas += "<td>";
-                    tablas += listFact[int.Parse(indexs[i])].SALDO;
+                    tablas += listFact[int.Parse(indexs2[i])].SALDO;
                     tablas += "</td>";
                     tablas += "</tr>";
 
@@ -225,13 +229,20 @@ namespace Proveedores.portal
                     tablas += "XML adjuntos";
                     tablas += "</td>";
                     tablas += "<td class='contadorXML'>";
-                    tablas += listFact[int.Parse(indexs[i])].cantidadXML;
+                    tablas += listFact[int.Parse(indexs2[i])].cantidadXML;
                     tablas += "</td>";
                     tablas += "</tr>";
 
                     tablas += "<tr>";
                     tablas += "<td>";
-                    tablas += "";
+                    if (i == 0)
+                    {
+                        tablas += "Encabezado";
+                    }
+                    else
+                    {
+                        tablas += "Detalle";
+                    }
                     tablas += "</td>";
                     tablas += "<td>";
                     tablas += "<img src='../css/images/fl_back.png' class='imgBack pointer' align='left'><img src='../css/images/fl_next.png' class='imgNext pointer' align='right'>";
@@ -241,7 +252,7 @@ namespace Proveedores.portal
                     tablas += "</tbody>";
                     tablas += "</table>";
 
-                    consolas += "<label class='consola " + clase + "'>" + listFact[int.Parse(indexs[i])].consola + "</label> ";
+                    consolas += "<label class='consola " + clase + "'>" + listFact[int.Parse(indexs2[i])].consola + "</label> ";
 
                     clase = "hidd";
                 }
@@ -346,7 +357,7 @@ namespace Proveedores.portal
                                 PNegocio.CargarFactura cf = new PNegocio.CargarFactura();                                
                                 for (int i = 0; i < indexs.Length; i++)
                                 {
-                                    if ((listFact[int.Parse(indexs[i])].DescripcionErrorSAP == "SAP : Cargada correctamente" || tipoArchivo == "PDF") &&
+                                    if ((listFact[int.Parse(indexs[i])].DescripcionErrorSAP.Contains("SAP : Cargada correctamente") || tipoArchivo == "PDF") &&
                                         listFact[int.Parse(indexs[i])].cantidadXML <= maxXML)
                                     {
                                         int contadorres = 0;
@@ -402,14 +413,17 @@ namespace Proveedores.portal
                                             {
                                                 complementoMsgError += listFact[int.Parse(indexs[i])].DescripcionErrorSAP;
                                                 listFact[int.Parse(indexs[i])].cantidadXML = contadorres;
-                                                listFact[int.Parse(indexs[i])].consola = "Cargada correctamente";
+                                                listFact[int.Parse(indexs[i])].consola = listFact[int.Parse(index)].DescripcionErrorSAP.Replace("SAP : ", "");                                                
                                             }
                                             else
                                             {
                                                 listFact[int.Parse(indexs[i])].consola = "SAP: Error al guardar el " + tipoArchivo;
-                                                complementoMsgError += "SAP: Error al guardar el " + tipoArchivo;
+                                                complementoMsgError += "SAP: Error al guardar el " + tipoArchivo;                                                
                                             }
-
+                                            if (i == 0)
+                                            {
+                                                listFact[int.Parse(indexs2[i])].consola = listFact[int.Parse(indexs[i])].consola;
+                                            }
                                             complementoMsgError += "</br>";
                                             complementoMsgError += "</br>";
 
@@ -421,7 +435,7 @@ namespace Proveedores.portal
                                             {
                                                 listFact[int.Parse(indexs[i])].esPrimerCarga = false;
                                             }
-                                            listFact[int.Parse(indexs[i])].msgVarios += complementoMsgError;
+                                            listFact[int.Parse(indexs[i])].msgVarios += complementoMsgError;                                            
                                         }
                                         catch (Exception z)
                                         {
@@ -494,6 +508,10 @@ namespace Proveedores.portal
                                         listFact[int.Parse(indexs[i])].msgVarios += complementoMsgError;
 
                                         listFact[int.Parse(indexs[i])].consola = listFact[int.Parse(indexs[i])].DescripcionErrorSAP;
+                                        if (i == 0)
+                                        {
+                                            listFact[int.Parse(indexs2[i])].consola = listFact[int.Parse(indexs[i])].DescripcionErrorSAP;
+                                        }
                                     }
                                 }
                                 cargarDatosTabla();
@@ -528,7 +546,10 @@ namespace Proveedores.portal
                                         listFact[int.Parse(indexs[i])].esPrimerCarga = false;
                                     }
                                     listFact[int.Parse(indexs[i])].msgVarios += complementoMsgError;
-
+                                    if (i == 0)
+                                    {
+                                        listFact[int.Parse(indexs2[i])].consola = listFact[int.Parse(indexs[i])].DescripcionErrorSAT;
+                                    }
                                 }
                             }
 
@@ -538,7 +559,7 @@ namespace Proveedores.portal
                     }
                     catch (Exception ex)
                     {
-                        this.lblConsola.Text = "Error al cargar el archivo" + " " + error + "" + ex;
+                        this.lblConsola.Text = "Error al cargar el archivo verifique que el XML este generado correctamente";
                         //Response.Write("Error: " + ex.Message); //Nota: Exception.Message devuelve un mensaje detallado que describe la excepción actual. //Por motivos de seguridad, no se recomienda devolver Exception.Message a los usuarios finales de //entornos de producción. Sería más aconsejable poner un mensaje de error genérico. } } else { Response.Write("Seleccione un archivo que cargar."); 
                     }
                 }
@@ -549,11 +570,11 @@ namespace Proveedores.portal
                     listFact = (List<PEntidades.FacturasXVerificar>)Session["lstFacturas2"];
                     if ((extXML == extencionValidaXML) == false)
                     {
-                        mesajeerr += "El formato del campo de achivos XML es icorrecto.</br>";
+                        mesajeerr += "El formato del campo de achivos XML es incorrecto.</br>";
                     }
                     if ((extPDF == extencionValidaPDF) == false)
                     {
-                        mesajeerr += "El formato del campo de achivos PDF es icorrecto.</br>";
+                        mesajeerr += "El formato del campo de achivos PDF es incorrecto.</br>";
                     }
 
                     for (int i = 0; i < indexs.Length; i++)
@@ -562,6 +583,10 @@ namespace Proveedores.portal
                         listFact[int.Parse(indexs[i])].DescripcionErrorSAP = "N/A";
                         listFact[int.Parse(indexs[i])].DescripcionErrorSAT = mesajeerr; //No es XML
                         listFact[int.Parse(indexs[i])].consola = mesajeerr; //No es XML
+                        if (i == 0)
+                        {
+                            listFact[int.Parse(indexs2[i])].consola = listFact[int.Parse(indexs[i])].consola;
+                        }
                     }
                     cargarDatosTabla();
                     //this.lblConsola.Text = "No es un XML";
@@ -588,6 +613,10 @@ namespace Proveedores.portal
                     listFact[int.Parse(indexs[i])].DescripcionErrorSAP = "N/A";
                     listFact[int.Parse(indexs[i])].DescripcionErrorSAT = mesajeerr; //No es XML
                     listFact[int.Parse(indexs[i])].consola = mesajeerr; //No es XML
+                    if (i == 0)
+                    {
+                        listFact[int.Parse(indexs2[i])].consola = listFact[int.Parse(indexs[i])].consola;
+                    }
                 }
                 cargarDatosTabla();
                 //this.lblConsola.Text = "No es un XML";
@@ -643,7 +672,7 @@ namespace Proveedores.portal
             ndComplemento = xmlDoc.GetElementsByTagName("cfdi:Impuestos")[0];
             try
             {
-                impRetencion = ndComplemento.Attributes["totalImpuestosRetenidos"].Value;
+                impRetencion = ndComplemento.Attributes["TotalImpuestosRetenidos"].Value;
             }
             catch (Exception)
             {
@@ -682,6 +711,10 @@ namespace Proveedores.portal
                 {
                     listFact[int.Parse(indexs[i])].consola = "Limite de XML adjuntos alcanzado";
                 }
+                if (i == 0)
+                {
+                    listFact[int.Parse(indexs2[i])].DescripcionErrorSAT = listFact[int.Parse(indexs[i])].DescripcionErrorSAT;
+                }
             }
 
             switch (resul.Trim())
@@ -711,27 +744,37 @@ namespace Proveedores.portal
 
             List<PEntidades.FacturasXVerificar> listFact = new List<PEntidades.FacturasXVerificar>();
             listFact = (List<PEntidades.FacturasXVerificar>)Session["lstFacturas2"];
-
+            System.Xml.XmlNode ndNodos;
             for (int j = 0; j < indexs.Length; j++)
             {
                 index = indexs[j];
                 if (listFact[int.Parse(index)].cantidadXML <= maxXML)
                 {
-                    string folio = "";
+                    //string folio = "";
                     string xmlString = this.xmlDoc.InnerXml.ToString();
-                    Comprobante comprobante = null;
-                    comprobante = (Comprobante)Serializer.FromXml(xmlString, typeof(Comprobante));
-                    folio = comprobante.folio;
-                    string emisor = comprobante._Emisor.rfc;
+                    //Comprobante comprobante = null;
+                    //comprobante = (Comprobante)Serializer.FromXml(xmlString, typeof(Comprobante));
+                    //folio = xmlDoc.LastChild.Attributes["Folio"].Value;
+                    ndNodos = xmlDoc.GetElementsByTagName("cfdi:Emisor")[0];
+                    string emisor = ndNodos.Attributes["Rfc"].Value;
                     string va_mon = "", val_impt = "", val_imps = "", val_iva = "", val_fec = "";
                     string moneda = "";
-                    decimal monto = comprobante.total;
-                    string receptor = comprobante.Receptor.rfc;
+                    decimal monto = Convert.ToDecimal(xmlDoc.LastChild.Attributes["Total"].Value);
+                    ndNodos = xmlDoc.GetElementsByTagName("cfdi:Receptor")[0];
+                    string receptor = ndNodos.Attributes["Rfc"].Value;
                     bool validarmir7 = false;
                     decimal importe = 0;
                     decimal importeiva = 0;
                     decimal importesub = 0;
-                    decimal importedes = TruncateDecimal(comprobante.descuento, 2);
+                    decimal importedes = 0;
+                    try
+                    {
+                        importedes = TruncateDecimal(Convert.ToDecimal(xmlDoc.LastChild.Attributes["Descuento"].Value), 2);
+                    }
+                    catch (Exception)
+                    {
+                        importedes = 0;
+                    }
                     System.Xml.XmlNode ndComplemento;
                     ndComplemento = xmlDoc.GetElementsByTagName("cfdi:Complemento")[0];
                     if (ndComplemento != null)
@@ -745,16 +788,47 @@ namespace Proveedores.portal
                         {
                         }
                     }
-                    var total = comprobante.total;
+                    var total = xmlDoc.LastChild.Attributes["Total"].Value;
                     //----------->
                     string mensajeval = "";
+                    //string advertencia = "";
                     bool boolfolio = true;
-                    fecha_xml = comprobante.fecha.ToString("yyyy-MM-dd");
-                    referencia = comprobante.serie.ToUpper() + comprobante.folio;
+                    fecha_xml = xmlDoc.LastChild.Attributes["Fecha"].Value.Substring(0, 10);
+                    try
+                    {
+                        referencia = xmlDoc.LastChild.Attributes["Serie"].Value.ToUpper() + xmlDoc.LastChild.Attributes["Folio"].Value;
+                    }
+                    catch (Exception)
+                    {
+                        try
+                        {
+                            referencia = xmlDoc.LastChild.Attributes["Serie"].Value.ToUpper();
+                        }
+                        catch (Exception)
+                        {
+                            try
+                            {
+                                referencia = xmlDoc.LastChild.Attributes["Folio"].Value;
+                            }
+                            catch (Exception)
+                            {
+                                try
+                                {
+                                    referencia = xmlDoc.LastChild.LastChild.FirstChild.Attributes["Folio"].Value;
+                                }
+                                catch (Exception)
+                                {
+                                    
+                                }
+                            }
+                        }
+
+                    }
+
                     referencia = referencia.Replace("_", "").Replace("-", "");
                     if (referencia != refer)
                     {
-                        mensajeval = mensajeval + "Referencia incorrecta debe ser serie y folio: </br> XML: " + referencia + "</br>Factura: " + refer + "</br>";
+                        mensajeval = mensajeval + "Las referencias son diferentes: </br> XML: " + referencia + "</br>Factura: " + refer + "</br>";
                     }
                     if (listaValidaciones.Count <= 1)
                     {
@@ -776,13 +850,13 @@ namespace Proveedores.portal
                                     va_mon = "X";
                                     try
                                     {
-                                        moneda = comprobante.Moneda.ToUpper();
+                                        moneda = xmlDoc.LastChild.Attributes["Moneda"].Value.ToUpper();
                                     }
                                     catch (Exception)
                                     {
                                         mensajeval = mensajeval + "El archivo XML no cuenta con moneda. </br>";
                                     }
-                                    
+
                                     break;
                                 case "RFC Emisor":
                                     if (listFact[int.Parse(index)].RFCCorrespon.Trim() != emisor)
@@ -798,22 +872,36 @@ namespace Proveedores.portal
                                 //    break;
                                 case "Importe Total":
                                     val_impt = "X";
-                                    validarmir7 = true;                                    
+                                    validarmir7 = true;
                                     if (String.IsNullOrEmpty(impRetencion) == false)
                                     {
                                         importe = Convert.ToDecimal(impRetencion);
                                     }
-                                    importe = decimal.Round(comprobante.total + importe, 2);
+                                    importe = decimal.Round(Convert.ToDecimal(xmlDoc.LastChild.Attributes["Total"].Value), 2) + importe;
                                     break;
                                 case "Importe IVA":
                                     val_iva = "X";
                                     validarmir7 = true;
-                                    importeiva = decimal.Round(comprobante.Impuestos.totalImpuestosTrasladados, 2);
+                                    try
+                                    {
+                                        for (int k = 0; k < xmlDoc.GetElementsByTagName("cfdi:Impuestos").Count; k++)
+                                        {
+                                            ndNodos = xmlDoc.GetElementsByTagName("cfdi:Impuestos")[k];
+                                            if (ndNodos.Attributes.Count > 0)
+                                            {
+                                                importeiva = decimal.Round(Convert.ToDecimal(ndNodos.Attributes["TotalImpuestosTrasladados"].Value), 2);
+                                            }
+                                        }
+                                    }
+                                    catch (Exception)
+                                    {
+                                        importeiva = 0;
+                                    }
                                     break;
                                 case "Sub Total":
                                     val_imps = "X";
                                     validarmir7 = true;
-                                    importesub = decimal.Round(comprobante.subTotal, 2);
+                                    importesub = decimal.Round(Convert.ToDecimal(xmlDoc.LastChild.Attributes["SubTotal"].Value), 2);
                                     break;
                                 case "Fecha Factura":
                                     val_fec = "X";
@@ -850,16 +938,27 @@ namespace Proveedores.portal
 
                     if (String.IsNullOrEmpty(mensajeval) && boolfolio)
                     {
-                        listFact[int.Parse(index)].DescripcionErrorSAP = "SAP : Cargada correctamente";
+                        //if (String.IsNullOrEmpty(advertencia) == false)
+                        //{
+                        //    advertencia = "</br>Advertencia: " + advertencia;
+                        //}
+                        listFact[int.Parse(index)].DescripcionErrorSAP = "SAP : Cargada correctamente"; //+ advertencia;
                         //resulFacturaCorrecta();
                         result = true;
                     }
                     else
                     {
-                        listFact[int.Parse(index)].DescripcionErrorSAP = "SAP : Valores de XML no coinciden:</br>" + mensajeval;
+                        //if (String.IsNullOrEmpty(advertencia) == false)
+                        //{
+                        //    advertencia = "Advertencia: " + advertencia;
+                        //}
+                        listFact[int.Parse(index)].DescripcionErrorSAP = "SAP : Valores de XML no coinciden:</br>";// + mensajeval + advertencia;
                         resulFacturaIncorrecta("SAP", index);
                     }
-                    //-----------<
+                    if (j == 0)
+                    {
+                        listFact[int.Parse(indexs2[j])].DescripcionErrorSAP = listFact[int.Parse(index)].DescripcionErrorSAP;
+                    }
                 }
                 else
                 {
@@ -903,7 +1002,7 @@ namespace Proveedores.portal
                 }
                 if (repuesta.Contains('F'))
                 {
-                    mensaje = mensaje + "Fecha de factura incorrecta.</br>";
+                    mensaje = mensaje + "Fecha diferente al sistema</br>";
                 }
                 if (repuesta.Contains('E'))
                 {

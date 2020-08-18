@@ -167,9 +167,9 @@
     <form id="form1" runat="server">
         <div id="divHeader">
             <div class="left">
-                <%--<img src="http://www.arcacontal.com/images/arca_logo.jpg" />--%>
-                <%--<img src="../images/Solution_Logo.png" />--%>
-                <img src="../images/logo_sanjacinto.png" />
+                <%--<img src="../images/Trascam_logo.png" Gonher_logo />--%>
+                <%--<img src="../images/Solution_Logo.png" />--%>                
+				<img src="../images/logo_sanjacinto.png" />
                 <%--<img src="http://sf-solutionfactory.com/support/images/Solution_Logo.png" />--%>
                 
             </div>

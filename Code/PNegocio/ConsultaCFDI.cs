@@ -41,9 +41,9 @@ namespace PNegocio
 
                 }
 
-                re = ndEmisor.Attributes["rfc"].Value;
-                rr = ndReceptor.Attributes["rfc"].Value;
-                tt = ndComprobante.Attributes["total"].Value;
+                re = ndEmisor.Attributes["Rfc"].Value;
+                rr = ndReceptor.Attributes["Rfc"].Value;
+                tt = ndComprobante.Attributes["Total"].Value;
 
                 cdn = "?re=" + re
                             + "&rr=" + rr

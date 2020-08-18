@@ -27,7 +27,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/22/2014 22:04:58</publishTime>
     </File>
     <File Include="administrator/config.aspx">
-      <publishTime>05/26/2016 00:47:44</publishTime>
+      <publishTime>02/26/2018 13:04:31</publishTime>
     </File>
     <File Include="administrator/DeleteAndUpdate.aspx">
       <publishTime>06/13/2014 14:27:58</publishTime>
@@ -69,7 +69,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/25/2016 13:17:29</publishTime>
     </File>
     <File Include="administrator/usuario.aspx">
-      <publishTime>04/02/2016 08:24:36</publishTime>
+      <publishTime>09/25/2017 12:42:42</publishTime>
     </File>
     <File Include="administrator/valXML.aspx">
       <publishTime>04/14/2015 11:18:50</publishTime>
@@ -141,28 +141,28 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/01/2014 10:14:10</publishTime>
     </File>
     <File Include="bin/PEntidades.dll">
-      <publishTime>05/12/2017 17:12:03</publishTime>
+      <publishTime>02/12/2018 14:12:14</publishTime>
     </File>
     <File Include="bin/PEntidades.pdb">
-      <publishTime>05/12/2017 17:12:03</publishTime>
+      <publishTime>02/12/2018 14:12:14</publishTime>
     </File>
     <File Include="bin/PNegocio.dll">
-      <publishTime>06/06/2017 17:28:07</publishTime>
+      <publishTime>02/23/2018 18:05:07</publishTime>
     </File>
     <File Include="bin/PNegocio.pdb">
-      <publishTime>06/06/2017 17:28:07</publishTime>
+      <publishTime>02/23/2018 18:05:07</publishTime>
     </File>
     <File Include="bin/PPersistencia.dll">
-      <publishTime>06/06/2017 17:28:06</publishTime>
+      <publishTime>02/12/2018 14:12:14</publishTime>
     </File>
     <File Include="bin/PPersistencia.pdb">
-      <publishTime>06/06/2017 17:28:06</publishTime>
+      <publishTime>02/12/2018 14:12:14</publishTime>
     </File>
     <File Include="bin/Proveedores.dll">
-      <publishTime>06/19/2017 17:35:44</publishTime>
+      <publishTime>01/14/2019 13:11:42</publishTime>
     </File>
     <File Include="bin/Proveedores.pdb">
-      <publishTime>06/19/2017 17:35:44</publishTime>
+      <publishTime>01/14/2019 13:11:42</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
       <publishTime>06/01/2014 10:14:08</publishTime>
@@ -240,7 +240,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/18/2016 09:40:31</publishTime>
     </File>
     <File Include="css/EstiloLogin.css">
-      <publishTime>11/03/2014 13:51:52</publishTime>
+      <publishTime>01/02/2018 13:57:10</publishTime>
     </File>
     <File Include="css/EstiloLoginPhone.css">
       <publishTime>01/15/2014 09:20:46</publishTime>
@@ -255,7 +255,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/21/2014 09:30:51</publishTime>
     </File>
     <File Include="css/EstiloTabla.css">
-      <publishTime>08/05/2015 10:36:24</publishTime>
+      <publishTime>02/02/2018 17:08:00</publishTime>
     </File>
     <File Include="css/images/bottom-bg.png">
       <publishTime>11/02/2014 11:33:22</publishTime>
@@ -642,7 +642,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/29/2014 14:51:18</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>03/02/2016 15:58:22</publishTime>
+      <publishTime>02/08/2018 17:54:30</publishTime>
     </File>
     <File Include="errorGenerico.html">
       <publishTime>09/07/2014 10:11:34</publishTime>
@@ -674,6 +674,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="images/fichero.png">
       <publishTime>03/13/2014 11:13:14</publishTime>
     </File>
+    <File Include="images/Gonher_logo.png">
+      <publishTime>02/09/2018 14:25:52</publishTime>
+    </File>
     <File Include="images/ico-ayuda.png">
       <publishTime>03/14/2014 15:10:52</publishTime>
     </File>
@@ -696,7 +699,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>03/13/2014 11:17:30</publishTime>
     </File>
     <File Include="images/ico-Volver.png">
-      <publishTime>10/06/2014 10:49:16</publishTime>
+      <publishTime>10/06/2014 11:49:16</publishTime>
     </File>
     <File Include="images/loading.gif">
       <publishTime>05/11/2015 09:34:32</publishTime>
@@ -704,11 +707,35 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="images/loadingDots.gif">
       <publishTime>01/13/2014 18:13:40</publishTime>
     </File>
+    <File Include="images/logo gpo. alimentro.JPG">
+      <publishTime>09/15/2017 12:58:02</publishTime>
+    </File>
+    <File Include="images/logo sicsa.bmp">
+      <publishTime>02/01/2018 13:51:19</publishTime>
+    </File>
     <File Include="images/logo.jpg">
       <publishTime>04/13/2015 11:59:48</publishTime>
     </File>
+    <File Include="images/logo_agencia_para_portadas.jpg">
+      <publishTime>09/27/2017 11:00:26</publishTime>
+    </File>
+    <File Include="images/logo_agencia_para_portadas.png">
+      <publishTime>09/27/2017 10:57:32</publishTime>
+    </File>
+    <File Include="images/logo_alimentro.png">
+      <publishTime>09/11/2017 16:22:05</publishTime>
+    </File>
+    <File Include="images/Logo_gonher.jpg">
+      <publishTime>02/08/2018 18:10:12</publishTime>
+    </File>
     <File Include="images/logo_sanjacinto.png">
       <publishTime>05/05/2017 14:35:55</publishTime>
+    </File>
+    <File Include="images/logo_sicsa.jpg">
+      <publishTime>09/21/2017 10:38:13</publishTime>
+    </File>
+    <File Include="images/logo_sicsa.png">
+      <publishTime>09/21/2017 13:32:21</publishTime>
     </File>
     <File Include="images/logo_tracusa.png">
       <publishTime>05/05/2016 15:29:40</publishTime>
@@ -734,6 +761,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="images/tipoX.png">
       <publishTime>07/25/2014 08:53:56</publishTime>
     </File>
+    <File Include="images/Trascam_logo.png">
+      <publishTime>02/09/2018 14:53:56</publishTime>
+    </File>
     <File Include="index.aspx">
       <publishTime>03/31/2015 13:01:12</publishTime>
     </File>
@@ -753,13 +783,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/22/2014 10:03:24</publishTime>
     </File>
     <File Include="js/EliminarFila.js">
-      <publishTime>02/15/2016 09:48:04</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="js/EliminarFilaProv.js">
       <publishTime>04/25/2016 14:13:52</publishTime>
     </File>
     <File Include="js/Estilo.js">
-      <publishTime>03/06/2016 11:52:56</publishTime>
+      <publishTime>02/02/2018 17:02:55</publishTime>
     </File>
     <File Include="js/Gen.js">
       <publishTime>11/03/2014 10:57:30</publishTime>
@@ -870,13 +900,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>01/02/2016 18:15:18</publishTime>
     </File>
     <File Include="pagMaestra/MtrAdministrador.Master">
-      <publishTime>02/06/2017 13:24:40</publishTime>
+      <publishTime>02/15/2018 10:40:35</publishTime>
     </File>
     <File Include="pagMaestra/MtrInicio.Master">
       <publishTime>04/13/2015 15:00:32</publishTime>
     </File>
     <File Include="pagMaestra/MtrProveedor.Master">
-      <publishTime>06/07/2017 16:28:25</publishTime>
+      <publishTime>02/15/2018 10:39:18</publishTime>
     </File>
     <File Include="portal/datosMaestros.aspx">
       <publishTime>06/18/2015 11:46:28</publishTime>
@@ -885,7 +915,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>08/07/2014 13:17:20</publishTime>
     </File>
     <File Include="portal/facturas.aspx">
-      <publishTime>10/12/2016 12:32:16</publishTime>
+      <publishTime>01/11/2018 10:32:50</publishTime>
     </File>
     <File Include="portal/facturas2.aspx">
       <publishTime>02/18/2014 14:07:20</publishTime>
@@ -894,7 +924,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/05/2014 13:57:16</publishTime>
     </File>
     <File Include="portal/facturasDet.aspx">
-      <publishTime>02/25/2016 12:47:48</publishTime>
+      <publishTime>02/09/2018 14:11:20</publishTime>
     </File>
     <File Include="portal/facturasMasiva.aspx">
       <publishTime>06/13/2014 08:14:50</publishTime>
@@ -909,7 +939,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>03/11/2014 10:29:05</publishTime>
     </File>
     <File Include="portal/Inicio.aspx">
-      <publishTime>06/07/2017 16:26:17</publishTime>
+      <publishTime>02/15/2018 10:35:55</publishTime>
     </File>
     <File Include="portal/operaciones.aspx">
       <publishTime>01/10/2014 15:53:43</publishTime>
@@ -924,7 +954,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/17/2015 14:05:06</publishTime>
     </File>
     <File Include="portal/usuarios.aspx">
-      <publishTime>05/26/2016 08:33:34</publishTime>
+      <publishTime>09/25/2017 18:06:12</publishTime>
     </File>
     <File Include="Properties/DataSources/PEntidades.SrvSATConsultaCFDI.Acuse.datasource">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1644,34 +1674,34 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>03/26/2014 09:44:42</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_UDATA_MASTERResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_UFAC_CARGADASResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_UFAC_LISTPAResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_UFAC_VERIFICARResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_UFAC_VERIFMIR7Response.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_UPAGOSResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_UPARTIDAS_ABIERTASResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_URES_PROVEEDORESResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_URES_SOCIEDADESResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProv/Proveedores.SrvSAPUProv.Z_URFCResponse.datasource">
-      <publishTime>05/12/2017 17:11:53</publishTime>
+      <publishTime>01/08/2018 14:58:01</publishTime>
     </File>
     <File Include="Service References/SrvSAPUProveedores/Proveedores.SrvSAPUProveedores.ZEDATA_MASTER.datasource">
       <publishTime>05/31/2016 13:49:51</publishTime>
@@ -1737,7 +1767,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/17/2014 15:28:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/22/2017 10:02:35</publishTime>
+      <publishTime>01/14/2019 13:16:32</publishTime>
     </File>
   </ItemGroup>
 </Project>

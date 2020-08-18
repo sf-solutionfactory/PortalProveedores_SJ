@@ -40,7 +40,7 @@ namespace PNegocio.Administrador
             {
                 List<int> listaEvitar = new List<int>();                
                 tablas = PEntidades.Utiles.getTablasbyLetras(resultado, "tab");
-                return Gen.Util.CS.Gen.convertToHtmlTableDelete(tablas[1].tabla, "tableToOrder", "tblComun' style='width:" + ancho + ";", listaEvitar, modificable, activable, desechable, false, evitar, 1);
+                return Gen.Util.CS.Gen.convertToHtmlTableDelete(tablas[0].tabla, "tableToOrder", "tblComun' style='width:" + ancho + ";", listaEvitar, modificable, activable, desechable, false, evitar, 1);
             }
             else
             {
@@ -55,7 +55,7 @@ namespace PNegocio.Administrador
             if (resultado.Count > 1)
             {
                 tablas = PEntidades.Utiles.getTablasbyLetras(resultado, "tab");
-                return Gen.Util.CS.Gen.convertToHtmlTableSort(tablas[1].tabla, "sortable1", "droptrue' style='width:" + ancho + ";");
+                return Gen.Util.CS.Gen.convertToHtmlTableSort(tablas[0].tabla, "sortable1", "droptrue' style='width:" + ancho + ";");
             }
             else
             {
@@ -70,7 +70,7 @@ namespace PNegocio.Administrador
             if (resultado.Count > 1)
             {
                 tablas = PEntidades.Utiles.getTablasbyLetras(resultado, "div");
-                return Gen.Util.CS.Gen.convertToHtmlTableSort(tablas[1].tabla, "sortable1", "droptrue' style='width:" + ancho + ";");
+                return Gen.Util.CS.Gen.convertToHtmlTableSort(tablas[0].tabla, "sortable1", "droptrue' style='width:" + ancho + ";");
             }
             else
             {

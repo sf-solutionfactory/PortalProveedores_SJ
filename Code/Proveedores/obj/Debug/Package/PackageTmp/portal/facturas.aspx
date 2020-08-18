@@ -284,7 +284,7 @@
                         Moneda:
                     </th>
                     <%-- <th>
-                        Fecha factura: 
+                        Factura: 
                     </th>--%>
                     <th>
                         Fecha: 
@@ -298,20 +298,20 @@
                         </asp:RadioButtonList>
                     </td>--%>
                     <td class="referecia">
-                        <asp:TextBox ID="txtRef1" runat="server"></asp:TextBox><br/><br/>
-                        <asp:TextBox ID="txtRef2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtRef2" runat="server"></asp:TextBox><br/><br/>
+                        <asp:TextBox ID="txtRef1" runat="server"></asp:TextBox>
                     </td>
                     <td class="moneda">
-                        <asp:TextBox ID="txtMoneda1" runat="server"></asp:TextBox><br/><br/>
-                        <asp:TextBox ID="txtMoneda2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtMoneda2" runat="server"></asp:TextBox><br/><br/>
+                        <asp:TextBox ID="txtMoneda1" runat="server"></asp:TextBox>
                     </td>
                     <%-- <td class="fechafact">
-                        <asp:TextBox ID="txtffact1" CssClass="datepicker" runat="server"></asp:TextBox><br/><br/>
-                        <asp:TextBox ID="txtffact2" CssClass="datepicker2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtffact2" runat="server"></asp:TextBox><br/><br/>
+                        <asp:TextBox ID="txtffact1" runat="server"></asp:TextBox>
                     </td>--%>
                     <td class="fechacompra">
-                        <asp:TextBox ID="datepicker" runat="server"></asp:TextBox><br/><br/>
-                        <asp:TextBox ID="datepicker2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="datepicker2" runat="server"></asp:TextBox><br/><br/>
+                        <asp:TextBox ID="datepicker" runat="server"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Button ID="btnActualizaX" CssClass="ico-actualizar" runat="server" Text="" />

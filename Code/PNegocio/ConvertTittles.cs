@@ -68,6 +68,7 @@ namespace PNegocio
 
             // KZ es el encabezado, el que contiene los desplegables
             // RE son los desplegables
+            
             for (int i = 0; i < lstPAbiertas.Count; i++)
             {
                 string clase = "";
@@ -93,8 +94,8 @@ namespace PNegocio
                 if (cont == "et")
                 {
                     clase = "kz";
-                }
-                if (lstPAbiertas[i].BLART1 == "KZ" || lstPAbiertas[i].BLART1 == "ZT" || lstPAbiertas[i].BLART1 == "KA") //#F5DA81
+                } 
+                if (lstPAbiertas[i].BLART1 == "KZ" || lstPAbiertas[i].BLART1 == "ZT" || lstPAbiertas[i].BLART1 == "KA" || lstPAbiertas[i].BLART1 == "ZP") //#F5DA81
                 {
                     
                     if (cont == "yes")
@@ -218,7 +219,7 @@ namespace PNegocio
             List<PEntidades.HeaderList> nombres = new List<HeaderList>();
             HeaderList head;
             
-            nombres.Add(head = new HeaderList("Factura"));
+            nombres.Add(head = new HeaderList("Factura-Remisión"));
             if (ordenarOrden == "X")
             {
                 nombres.Add(head = new HeaderList("Orden de compra"));   
@@ -234,7 +235,7 @@ namespace PNegocio
             //nombres.Add(head = new HeaderList("Imp. IVA"));
             //nombres.Add(head = new HeaderList("Retención"));
             nombres.Add(head = new HeaderList("Moneda"));
-            nombres.Add(head = new HeaderList("Total"));
+            //nombres.Add(head = new HeaderList("Total"));
             nombres.Add(head = new HeaderList("Adjuntos"));
 
             string codeBeginTable = "";
@@ -303,7 +304,7 @@ namespace PNegocio
                                       //"<td class='columna-numerica'>" + listFact[i].MWSKZ + "</td>" +
                                       //"<td class='columna-numerica'>" + listFact[i].RETENCION + "</td>" +
                                       "<td >" + listFact[i].WAERS + "</td>" +
-                                      "<td class='columna-numerica'>" + listFact[i].SALDO + "</td>" +
+                                      //"<td class='columna-numerica'>" + listFact[i].SALDO + "</td>" +
                                       "<td class='columna-numerica'>" + cantidadXML + "</td>";
                     listFact[i].DescripcionErrorSAT = listFact[i].DescripcionErrorSAT.ToUpper().Trim();
                     listFact[i].DescripcionErrorSAP = listFact[i].DescripcionErrorSAP.ToUpper().Trim();

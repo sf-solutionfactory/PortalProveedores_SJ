@@ -307,12 +307,12 @@
     <Content Include="css\images\estatus-detalle.png" />
     <Content Include="images\fichero.png" />
     <Content Include="images\ico-ListaGrupo.png" />
+    <Content Include="images\ico-Volver.png" />
     <Content Include="images\loading.gif" />
     <Content Include="images\loadingDots.gif" />
-    <Content Include="images\logo_sanjacinto.png" />
-    <Content Include="images\logo_tracusa.png" />
     <Content Include="css\images\ico-cerrar.png" />
     <Content Include="images\ico-ayuda.png" />
+    <Content Include="images\logo_sanjacinto.png" />
     <Content Include="images\sap.png" />
     <Content Include="images\sat.png" />
     <Content Include="js\AddDeleteTable.js" />
@@ -585,7 +585,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\SrvSAPUProv\zws_uproveedores1.wsdl" />
+    <None Include="Service References\SrvSAPUProv\zws_uproveedores.wsdl" />
     <None Include="Service References\SrvSATConsultaCFDI\configuration91.svcinfo" />
     <None Include="Service References\SrvSATConsultaCFDI\configuration.svcinfo" />
     <None Include="Service References\SrvSATConsultaCFDI\Reference.svcmap">

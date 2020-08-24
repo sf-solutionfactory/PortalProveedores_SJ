@@ -828,7 +828,7 @@ namespace Proveedores.portal
 
                     //referencia = referencia.Replace("_", "").Replace("-", "");
                     referencia = listFact[int.Parse(index)].uuid.Substring(listFact[int.Parse(index)].uuid.Length - 5);
-                    if (referencia != refer)
+                    if (referencia.ToUpper() != refer.ToUpper())
                     {
                         mensajeval = mensajeval + "Las referencias son diferentes: </br> XML: " + referencia + "</br>Factura: " + refer + "</br>";
                     }

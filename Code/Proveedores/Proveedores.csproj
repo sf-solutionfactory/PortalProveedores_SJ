@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -378,6 +379,7 @@
     <Content Include="Properties\DataSources\PEntidades.SrvSATConsultaCFDI.Acuse.datasource" />
     <Content Include="pagMaestra\MtrAdministrador.Master" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Perfil1_Luis.pubxml" />
     <Content Include="scripts\tinymce\langs\es_MX.js" />
     <Content Include="scripts\tinymce\license.txt" />

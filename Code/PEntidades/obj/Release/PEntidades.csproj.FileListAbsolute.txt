@@ -135,3 +135,9 @@ C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidad
 C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\obj\Release\PEntidades.csprojAssemblyReference.cache
 C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\obj\Release\PEntidades.dll
 C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PEntidades\obj\Release\PEntidades.pdb
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PEntidades\bin\Release\PEntidades.dll.config
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PEntidades\bin\Release\PEntidades.dll
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PEntidades\bin\Release\PEntidades.pdb
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PEntidades\obj\Release\PEntidades.csprojAssemblyReference.cache
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PEntidades\obj\Release\PEntidades.dll
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PEntidades\obj\Release\PEntidades.pdb

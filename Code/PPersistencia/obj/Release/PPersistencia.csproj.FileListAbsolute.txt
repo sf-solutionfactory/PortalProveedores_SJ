@@ -184,3 +184,13 @@ C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersist
 C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.csproj.CopyComplete
 C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.dll
 C:\Users\SF-0023\source\repos\Portal San Jasinto\Proveedores 26 05 2015\PPersistencia\obj\Release\PPersistencia.pdb
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\bin\Release\PPersistencia.dll.config
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\bin\Release\PPersistencia.dll
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\bin\Release\PPersistencia.pdb
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\bin\Release\PEntidades.dll
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\bin\Release\PEntidades.pdb
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\bin\Release\PEntidades.dll.config
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\obj\Release\PPersistencia.csprojAssemblyReference.cache
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\obj\Release\PPersistencia.csproj.CopyComplete
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\obj\Release\PPersistencia.dll
+D:\User\RSG\GitHub\PortalProveedores_SJ\Code\PPersistencia\obj\Release\PPersistencia.pdb

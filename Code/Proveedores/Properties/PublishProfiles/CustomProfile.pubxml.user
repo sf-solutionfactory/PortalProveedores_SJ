@@ -73,10 +73,10 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>01/06/2014 10:14:08</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>08/20/2020 15:41:48</publishTime>
+      <publishTime>08/24/2020 14:23:32</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>08/20/2020 15:41:48</publishTime>
+      <publishTime>08/24/2020 14:23:32</publishTime>
     </File>
     <File Include="bin/ClosedXML.dll">
       <publishTime>02/01/2016 18:15:16</publishTime>
@@ -130,25 +130,25 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>08/19/2020 11:15:32</publishTime>
     </File>
     <File Include="bin/PNegocio.dll">
-      <publishTime>08/20/2020 15:41:33</publishTime>
+      <publishTime>08/24/2020 14:23:26</publishTime>
     </File>
     <File Include="bin/PNegocio.pdb">
-      <publishTime>08/20/2020 15:41:33</publishTime>
+      <publishTime>08/24/2020 14:23:26</publishTime>
     </File>
     <File Include="bin/PPersistencia.dll">
-      <publishTime>08/20/2020 15:41:32</publishTime>
+      <publishTime>08/24/2020 14:23:26</publishTime>
     </File>
     <File Include="bin/PPersistencia.dll.config">
       <publishTime>07/11/2014 12:27:40</publishTime>
     </File>
     <File Include="bin/PPersistencia.pdb">
-      <publishTime>08/20/2020 15:41:32</publishTime>
+      <publishTime>08/24/2020 14:23:26</publishTime>
     </File>
     <File Include="bin/Proveedores.dll">
-      <publishTime>08/20/2020 15:41:33</publishTime>
+      <publishTime>08/24/2020 14:23:27</publishTime>
     </File>
     <File Include="bin/Proveedores.pdb">
-      <publishTime>08/20/2020 15:41:33</publishTime>
+      <publishTime>08/24/2020 14:23:27</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
       <publishTime>01/06/2014 10:14:08</publishTime>
@@ -832,7 +832,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>09/25/2017 18:06:12</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>08/20/2020 15:41:36</publishTime>
+      <publishTime>08/24/2020 14:23:29</publishTime>
     </File>
     <File Include="Properties/DataSources/PEntidades.SrvSATConsultaCFDI.Acuse.datasource">
       <publishTime>02/17/2014 14:29:00</publishTime>

@@ -58,7 +58,8 @@ namespace PPersistencia
         public string[] ejcPsdVerifcarUsuario(string usuario, string password)
         {
             abrirConexion();
-            password = "BUIRHVOEIeUH68VkT242cftM27Y7B78ymF1SNuiYP3A=";
+            //password = "BUIRHVOEIeUH68VkT242cftM27Y7B78ymF1SNuiYP3A=";//2000027Sealed
+            password = "ru/C0FRoFMkiMP9zFnCdinyNLnBN5XcNWJ6wOil4biyYXVI26Jg/cA=="; //ZAdministradorportalZ
             string proc = "verifUser";
             //string ret = "";
             SqlCommand = new SqlCommand(proc, Con);

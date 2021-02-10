@@ -12,7 +12,7 @@ namespace PNegocio
         {
         }
 
-        public string esCorrectoCFDI(string innerXML)
+        public string esCorrectoCFDI(string innerXML, bool nv)
         {
             System.Xml.XmlDocument xmlDoc = new System.Xml.XmlDocument();
             xmlDoc.InnerXml = innerXML;
@@ -55,9 +55,18 @@ namespace PNegocio
                 return "Sin estructura CFDI";//Estructura mala
             }
 
-            PEntidades.SrvSATConsultaCFDI.ValidarCFDI srv = new PEntidades.SrvSATConsultaCFDI.ValidarCFDI();
-            PEntidades.SrvSATConsultaCFDI.MiAcuse acuse = srv.esValidoCFDI(cdn);
-            return acuse.Estado;
+            // BEGIN MODIFY SF RSG 09.02.2021
+            if (!nv)
+            {
+                PEntidades.SrvSATConsultaCFDI.ValidarCFDI srv = new PEntidades.SrvSATConsultaCFDI.ValidarCFDI();
+                PEntidades.SrvSATConsultaCFDI.MiAcuse acuse = srv.esValidoCFDI(cdn);
+                return acuse.Estado;
+            }
+            else
+            {
+                return "Vigente";
+            }
+            // END MODIFY SF RSG 09.02.2021
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
@@ -113,8 +114,8 @@ namespace Proveedores.portal
                         if (this.index != "")//Cuando si se encuentra la factura
                         {
                             string raw = "";
-                            
-                            if (validarSAT(this.xmlDoc))//Cuando es válido en SAT
+                            bool noValida = WebConfigurationManager.AppSettings["noValidaSat"].ToString().Equals("X");//SF RSG 09.02.2021
+                            if (validarSAT(this.xmlDoc, noValida))//Cuando es válido en SAT
                             {
                                 if (validarSAP())//Cuando es válido en SAP
                                 {
@@ -240,10 +241,10 @@ namespace Proveedores.portal
                 //               "</script>");
         }
 
-        private bool validarSAT(System.Xml.XmlDocument xmlDoc)
+        private bool validarSAT(System.Xml.XmlDocument xmlDoc, bool nv)
         {
             PNegocio.ConsultaCFDI c = new PNegocio.ConsultaCFDI();
-            string resul = c.esCorrectoCFDI(xmlDoc.InnerXml); 
+            string resul = c.esCorrectoCFDI(xmlDoc.InnerXml, nv); 
 
             switch (resul.Trim())
             {

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
@@ -331,7 +332,8 @@ namespace Proveedores.portal
                         bool continuar = false;
                         if (tipoArchivo == "XML")
                         {
-                            continuar = validarSAT(ref impRetencion);
+                            bool noValida = WebConfigurationManager.AppSettings["noValidaSat"].ToString().Equals("X");//SF RSG 09.02.2021
+                            continuar = validarSAT(ref impRetencion, noValida);
                         }
                         //else if (tipoArchivo == "PDF")
                         //{
@@ -647,10 +649,10 @@ namespace Proveedores.portal
 
         }
 
-        private bool validarSAT(ref string impRetencion)
+        private bool validarSAT(ref string impRetencion, bool nv)
         {
             PNegocio.ConsultaCFDI c = new PNegocio.ConsultaCFDI();
-            string resul = c.esCorrectoCFDI(this.xmlDoc.InnerXml);
+            string resul = c.esCorrectoCFDI(this.xmlDoc.InnerXml, nv);
 
             List<PEntidades.FacturasXVerificar> listFact = new List<PEntidades.FacturasXVerificar>();
             listFact = (List<PEntidades.FacturasXVerificar>)Session["lstFacturas2"];
